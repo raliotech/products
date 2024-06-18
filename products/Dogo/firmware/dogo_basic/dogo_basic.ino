@@ -71,6 +71,7 @@ void dogo_pause() {
 void setup() {
   Serial.begin(9600);
   init_hardware();
+  delay(prog_delay * 2);
 }
 
 void loop() {
