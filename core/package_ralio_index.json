@@ -12,7 +12,7 @@
             {
                "category": "ESP8266",
                "name": "mercury",
-               "url": "https://github.com/raliotech/engineering/blob/gg_20240729/core/esp8266-3.1.2.zip",
+               "url": "https://github.com/raliotech/engineering/releases/download/ralio_v1.0.0/ralio-1.0.0.zip",
                "version": "1.0.0",
                "architecture": "esp8266",
                "archiveFileName": "ralio-1.0.0.zip",
