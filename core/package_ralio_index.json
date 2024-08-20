@@ -51,6 +51,46 @@
                },
                "size": "39981674",
                "checksum": "SHA-256:5147e54dc58b188d84f390ded8630137b9280be13022557b512cdf75761e8364"
+            },
+            {
+               "category": "ESP8266",
+               "name": "mercury",
+               "url": "https://github.com/raliotech/engineering/releases/download/ralio_v1.0.0/ralio-1.0.0.zip",
+               "version": "1.0.0",
+               "architecture": "esp8266",
+               "archiveFileName": "ralio-1.0.0.zip",
+               "boards": [
+                  {
+                     "name": "Mercury 1.0"
+                  }
+               ],
+               "toolsDependencies": [
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "xtensa-lx106-elf-gcc"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "mkspiffs"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "mklittlefs"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.7.2-post2",
+                     "name": "python3"
+                  }
+               ],
+               "help": {
+                  "online": "https://esp8266.com/arduino"
+               },
+               "size": "40024639",
+               "checksum": "SHA-256:daf594d44234c3d01f8d8acbce3b36b28e246ab6e6c04c3ade605c2a0fd92329"
             }
          ],
          "tools": [
