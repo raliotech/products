@@ -16,11 +16,11 @@ Download the latest stable version of Arduino IDE from the [Arduino website](htt
 
 - Open Boards Manager from Tools > Board menu and install *Ralio* platform.
 
-![bm](img/BoardManager.png)
+![bm](img/boardManager.png)
 
 - Select appropriate Mercury board from Tools > Board menu after installation.
 
-![bs](img/BoardSelect.png)
+![bs](img/boardSelect.png)
 
 ___
 
