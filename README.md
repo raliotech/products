@@ -1,7 +1,7 @@
 Ralio Products
 ===========================================
 
-## Support for Arduino® IDE
+# Support for Arduino® IDE
 Download the latest stable version of Arduino IDE from the [Arduino website](https://www.arduino.cc/en/software).
 
 ## Add support for Mercury Boards
@@ -27,3 +27,12 @@ ___
 For more information please refer to [Additional Documentation](https://github.com/raliotech/engineering/tree/master/core/board_manager/esp8266#readme) or email us at ```info@raliotech.com```.
 
 ___
+
+# Support for Products
+
+## Dogo - A DogBot
+
+![dogo](img/dogo.png)
+
+### Dogo firmware
+All Dogo associated FW can be found in the following directory [Dogo Firmware](https://github.com/raliotech/engineering/tree/master/products/Dogo/firmware)
