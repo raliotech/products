@@ -54,7 +54,7 @@
             },
             {
                "category": "ESP8266",
-               "name": "mercury",
+               "name": "Ralio",
                "url": "https://github.com/raliotech/engineering/releases/download/ralio_v1.0.0/ralio-1.0.0.zip",
                "version": "1.0.0",
                "architecture": "esp8266",
