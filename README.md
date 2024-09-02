@@ -20,4 +20,10 @@ Download the latest stable version of Arduino IDE from the [Arduino website](htt
 
 - Select appropriate Mercury board from Tools > Board menu after installation.
 
-![abm](img/additionalBoardManager.png)
+![abm](img/BoardSelect.png)
+
+___
+
+For more information please refer to [Additional Documentation](https://github.com/raliotech/engineering/tree/master/core/board_manager/esp8266#readme) or email us at ```info@raliotech.com```.
+
+___
