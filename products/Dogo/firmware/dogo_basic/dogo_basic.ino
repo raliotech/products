@@ -1,3 +1,9 @@
+// *************************
+//
+// RALIO TECHNOLOGIES LLP
+//
+// *************************
+
 // dogo_basic.ino
 // This code controls the motion of a dog robot, allowing it to walk forward.
 // The robot is equipped with ultrasonic sensors that continuously scan for obstacles in its path.
