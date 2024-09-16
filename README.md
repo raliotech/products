@@ -38,4 +38,11 @@ ___
 ![dogo](img/dogo.png)
 
 ### Dogo firmware
-All Dogo associated FW can be found in the following directory [Dogo Firmware](https://github.com/raliotech/engineering/tree/master/products/Dogo/firmware)
+All Dogo associated FW can be found in the following directory [Dogo Firmware](https://github.com/raliotech/engineering/tree/master/products/dogo/firmware)
+
+## Scout - A SmartCar
+
+![scout](img/scout.png)
+
+### Scout firmware
+All Scout associated FW can be found in the following directory [Scout Firmware](https://github.com/raliotech/engineering/tree/master/products/scout/firmware)
