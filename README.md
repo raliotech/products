@@ -1,48 +1,27 @@
 Ralio Products
 ===========================================
 
-# Support for Arduino® IDE
-Download the latest stable version of Arduino IDE from the [Arduino website](https://www.arduino.cc/en/software).
+## Boards
 
-## Add support for Mercury Boards
+### Arduino® IDE Support for Mercury
+Carefully follow the instruction on the [Board Installation](https://github.com/raliotech/products/tree/master/boards/mercury) page.
 
-### Installing with Boards Manager
-
-- Start Arduino and open the Preferences window.
-- Enter the below .json file link into the *File > Preferences > Additional Boards Manager URLs* field of the Arduino IDE.
-  ```json
-  https://raw.githubusercontent.com/raliotech/engineering/master/core/package_ralio_index.json
-  ```
-- You can add multiple URLs, separating them with commas.
-
-![abm](img/additionalBoardManager.png)
-
-- Open Boards Manager from Tools > Board menu and install *Ralio* platform.
-
-![bm](img/boardManager.png)
-
-- Select appropriate Mercury board from Tools > Board menu after installation.
-
-![bs](img/boardSelect.png)
+For more information please refer to [Additional Documentation](https://github.com/raliotech/products/tree/master/core/board_manager/esp8266#readme) or email us at ```info@raliotech.com```.
 
 ___
 
-For more information please refer to [Additional Documentation](https://github.com/raliotech/engineering/tree/master/core/board_manager/esp8266#readme) or email us at ```info@raliotech.com```.
+## Support for Projects
 
-___
-
-# Support for Products
-
-## Dogo - A DogBot
+### Dogo - A DogBot
 
 ![dogo](img/dogo.png)
 
-### Dogo firmware
-All Dogo associated FW can be found in the following directory [Dogo Firmware](https://github.com/raliotech/engineering/tree/master/products/dogo/firmware)
+All Dogo associated FW can be found in the following directory [Dogo Firmware](https://github.com/raliotech/products/tree/master/projects/dogo/firmware)
 
-## Scout - A SmartCar
+### Scout - A SmartCar
 
 ![scout](img/scout.png)
 
-### Scout firmware
-All Scout associated FW can be found in the following directory [Scout Firmware](https://github.com/raliotech/engineering/tree/master/products/scout/firmware)
+All Scout associated FW can be found in the following directory [Scout Firmware](https://github.com/raliotech/products/tree/master/projects/scout/firmware)
+
+---
