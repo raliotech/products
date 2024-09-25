@@ -4,6 +4,9 @@ Ralio Products
 ## Boards
 
 ### Arduino® IDE Support for Mercury
+
+![mercury_v2.0](img/mercury_v2.0.png)
+
 Carefully follow the instruction on the [Board Installation](https://github.com/raliotech/products/tree/master/boards/mercury) page.
 
 For more information please refer to [Additional Documentation](https://github.com/raliotech/products/tree/master/core/board_manager/esp8266#readme) or email us at ```info@raliotech.com```.
