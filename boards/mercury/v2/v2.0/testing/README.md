@@ -15,21 +15,22 @@ ___
 
 ### 2. Motor Stall Characteristics with 9V Alkaline Battery
 
-#### New Battery - Fully Charged (Vbat > 9V)
+#### 2.1 New Battery - Fully Charged (Vbat > 9V)
 
 - Vcc ~ 8.5V
 - Two motors connected to channel 1 and 2 (one each).
 - Both motors made to stall simultaneously when in-drive. Stall current ~ 750mA per motor
-- <span style="color:green;">3V rail (blue trace) remains stable</span>
+- 3V rail (blue trace) remains stable
 
 ![dualMotorStall_9V_VBAT](img/dualMotorStall_9V_VBAT.png) 
 
-#### Used Battery (Vbat ~ 8V)
+#### 2.2 Used Battery (Vbat ~ 8V)
 
 - Vcc ~ 7.5V
 - Two motors connected to channel 1 and 2 (one each).
 - Both motors made to stall simultaneously when in-drive. Stall current ~750 mA per motor
-- <span style="color:red;">3V rail (blue trace) drops to 1.7V</span>
+> [!CAUTION]
+> 3V rail (blue trace) drops to 1.7V
 
 ![dualMotorStall_8V_VBAT](img/dualMotorStall_8V_VBAT.png) 
 
@@ -37,31 +38,38 @@ ___
 
 ### 3. Motor Driver Performance
 
-#### Dual Channel Nominal Operation
+#### 3.1 Dual Channel Nominal Operation
 
 - Two motors (eloads) connected to channel 1 and 2 (one each).
-- Both motors driven for 15min consuming 350mA per channel (700mA) total
-- <span style="color:green;">Motor driver successfully supported 700mA current consumption for 15min.</span>
-- <span style="color:green;">Motor driver remains below 35C throughout the test.</span>
+- Both motors driven for 15min consuming 350mA per channel (700mA) total.
+> [!NOTE]
+> - Motor driver successfully supported 700mA current consumption for 15min.
+> - Motor driver remains below 35C throughout the test.
 
 ![dualChNom](img/dualChNom.png)
 
-#### Dual Channel Stall Operation
+#### 3.2 Dual Channel Stall Operation
 
 - Two motors (eloads) connected to channel 1 and 2 (one each).
 - Both motors driven for 15min consuming 700mA per channel (1.4A) total
-- <span style="color:green;">Motor driver successfully supported 1.4A current consumption for 15min.</span>
-- <span style="color:green;">Motor driver remains below 40C throughout the test.</span>
+> [!NOTE]
+> - Motor driver successfully supported 1.4A current consumption for 15min.
+> - Motor driver remains below 40C throughout the test.
 
 ![dualChStall](img/dualChStall.png)
 
-#### Dual Channel Maximum Current Capability
+#### 3.3 Dual Channel Maximum Current Capability
 
 - Two motors (eloads) connected to channel 1 and 2 (one each).
 - Both motors driven for 15min consuming 1A per channel (2A) total
-- <span style="color:green;">Motor driver successfully supported 2A current consumption for 15min.</span>
-- <span style="color:orange;">Motor driver remains below 55C throughout the test.</span>
-- **It's recommended to not consume more that 1A per channel for more than 5min.**
+> [!NOTE]
+> - Motor driver successfully supported 2A current consumption for 15min.
+
+> [!WARNING]
+> - Motor driver remains below 55C throughout the test.
+
+> [!TIP]
+> **It's recommended to not consume more that 1A per channel for more than 5min.**
 
 ![dualChStall](img/dualChStall.png)
 
@@ -75,32 +83,38 @@ ___
 
 - Servo sweep test conducted with 100g, 200g, 300g and 400g load
 - Load arm length ~ 13.5mm
-- **It's recommended to not exceed 0.025Nm torge per servo.**
+> [!TIP]
+**It's recommended to not exceed 0.025Nm torge per servo.**
 
-#### Servo Sweep Operation with 100g load
+#### 4.1 Servo Sweep Operation with 100g load
 
-- <span style="color:green;">Servo can successfully sweep from 0 - 180degree providing 0.013Nm torque</span>
+> [!NOTE]
+> - Servo can successfully sweep from 0 - 180degree providing 0.013Nm torque
 - Average current consumption < 20mA with spikes of 500mA
 
 ![servo_100g](img/servo_100g.png)
 
-#### Servo Sweep Operation with 200g load
+#### 4.2 Servo Sweep Operation with 200g load
 
-- <span style="color:green;">Servo can successfully sweep from 0 - 180degree providing 0.013Nm torque</span>
+> [!NOTE]
+> - Servo can successfully sweep from 0 - 180degree providing 0.013Nm torque.
 - Average current consumption < 40mA with spikes of 500mA
 
 ![servo_200g](img/servo_200g.png)
 
-#### Servo Sweep Operation with 300g load
+#### 4.3 Servo Sweep Operation with 300g load
 
-- <span style="color:orange;">Servo can successfully sweep from 0 - 180degree providing 0.040Nm torque but as soon as power is released, the servo motor is not able to hold the 300g load and it drops down.</span>
+> [!WARNING]
+> Servo can successfully sweep from 0 - 180degree providing 0.040Nm torque but as soon as power is released, the servo motor is not able to hold the 300g load and it drops down.
+
 - Average current consumption < 60mA with spikes of 500mA
 
 ![servo_300g](img/servo_300g.png)
 
-#### Servo Sweep Operation with 400g load
+#### 4.4 Servo Sweep Operation with 400g load
 
-- <span style="color:red;">Servo failed to sweep and stalled as soon as test began causing permanent damage.</span>
+> [!CAUTION]
+Servo failed to sweep and stalled as soon as test began causing permanent damage.
 - Stall current < 900mA
 
 ![servo_400g](img/servo_400g.png)
