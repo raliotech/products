@@ -9,7 +9,7 @@ Ralio Products
 
 - Smooth bootup with Vcc voltage ranging between 6V to 15V
 
-![boot_6V](img/boot_6V.png) ![boot_9V](img/boot_9V.png) ![boot_12V](img/boot_12V.png) ![boot_15V](img/boot_15V.png) 
+![boot_6V](img/boot_6V.png) ![boot_9V](img/boot_9V.png) ![boot_12V](img/boot_12V.png) ![boot_15V](img/boot_15v.png) 
 
 ___
 
