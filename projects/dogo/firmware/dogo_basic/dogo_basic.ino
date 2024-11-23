@@ -26,14 +26,14 @@ Servo backServo;
 
 const uint8_t frontServoPin = D5;
 const uint8_t backServoPin = D6;
-uint8_t frontServo_initial_angle = 90;
-uint8_t backServo_initial_angle = 90;
-uint8_t frontServo_change_angle = 12;
-uint8_t backServo_change_angle = 18;
+uint8_t frontServo_initial_angle = 100;
+uint8_t backServo_initial_angle = 80;
+uint8_t frontServo_change_angle = 15;
+uint8_t backServo_change_angle = 20;
 
 // define ultrasonic pins
-const uint8_t uss_trigPin = D8;
-const uint8_t uss_echoPin = D7;
+const uint8_t uss_trigPin = D7;
+const uint8_t uss_echoPin = D8;
 double dogo_stop_distance = 0.0;
 uint8_t uss_measure_samples = 3;
 
@@ -95,9 +95,10 @@ void setup() {
 
 void loop() {
   dogo_stop_distance = measureDistance();
-  if (dogo_stop_distance > 5) {
+  if (dogo_stop_distance > 10) {
     dogo_cat_walk();
   } else {
     dogo_pause();
   }
+  // dogo_cat_walk();
 }
