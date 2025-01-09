@@ -66,11 +66,11 @@ void forward(int pwmValue) {
 
 void backward(int pwmValue) {
   // 0 < pwmValue < 255;
-  analogWrite(MOTOR_1_PWM, LOW);
-  digitalWrite(MOTOR_1_DIR, pwmValue);
+  digitalWrite(MOTOR_1_PWM, LOW);
+  analogWrite(MOTOR_1_DIR, pwmValue);
 
-  analogWrite(MOTOR_2_PWM, LOW);
-  digitalWrite(MOTOR_2_DIR, pwmValue);
+  digitalWrite(MOTOR_2_PWM, LOW);
+  analogWrite(MOTOR_2_DIR, pwmValue);
 }
 
 void brake() {
@@ -81,22 +81,22 @@ void brake() {
   digitalWrite(MOTOR_2_DIR, HIGH);
 }
 
-void right(int pwmValue) {
-  //PWM: 0 -> Slow; 255 -> Fast
-  analogWrite(MOTOR_1_PWM, LOW);
-  digitalWrite(MOTOR_1_DIR, pwmValue);
-
-  analogWrite(MOTOR_2_PWM, pwmValue);
-  digitalWrite(MOTOR_2_DIR, LOW);
-}
-
 void left(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
   analogWrite(MOTOR_1_PWM, pwmValue);
   digitalWrite(MOTOR_1_DIR, LOW);
 
-  analogWrite(MOTOR_2_PWM, LOW);
-  digitalWrite(MOTOR_2_DIR, pwmValue);
+  digitalWrite(MOTOR_2_PWM, LOW);
+  digitalWrite(MOTOR_2_DIR, LOW);
+}
+
+void right(int pwmValue) {
+  //PWM: 0 -> Slow; 255 -> Fast
+  digitalWrite(MOTOR_1_PWM, LOW);
+  digitalWrite(MOTOR_1_DIR, LOW);
+
+  analogWrite(MOTOR_2_PWM, pwmValue);
+  digitalWrite(MOTOR_2_DIR, LOW);
 }
 
 // function - recieve data from UDP sender
@@ -127,11 +127,13 @@ void setup() {
 
 void loop() {
   receiveUdpPacket(incomingPacket);
+  cruise();
   if (strlen(incomingPacket) > 0) {
     // Serial.printf("Received message: %s\n", incomingPacket);
     switch (incomingPacket[0]) {
       case 'F':
         forward(200);
+        delay(50);
         strip.setPixelColor(0, 0, 0, 0);
         strip.show();
         break;
@@ -141,23 +143,18 @@ void loop() {
         strip.show();
         break;
       case 'L':
-        left(200);
-        delay(50);
-        cruise();
-        delay(50);
+        left(150);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
       case 'R':
-        right(200);
-        delay(50);
-        cruise();
-        delay(50);
+        right(150);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
       case 'B':
         backward(200);
+        delay(50);
         strip.setPixelColor(0, 255, 255, 255);
         strip.show();
         break;
