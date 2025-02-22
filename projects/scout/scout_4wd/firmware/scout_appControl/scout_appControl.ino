@@ -83,20 +83,20 @@ void brake() {
 
 void left(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
-  analogWrite(MOTOR_1_PWM, pwmValue);
-  digitalWrite(MOTOR_1_DIR, LOW);
+  digitalWrite(MOTOR_1_PWM, LOW);
+  analogWrite(MOTOR_1_DIR, pwmValue);
 
-  digitalWrite(MOTOR_2_PWM, LOW);
+  analogWrite(MOTOR_2_PWM, pwmValue);
   digitalWrite(MOTOR_2_DIR, LOW);
 }
 
 void right(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
-  digitalWrite(MOTOR_1_PWM, LOW);
+  analogWrite(MOTOR_1_PWM, pwmValue);
   digitalWrite(MOTOR_1_DIR, LOW);
 
-  analogWrite(MOTOR_2_PWM, pwmValue);
-  digitalWrite(MOTOR_2_DIR, LOW);
+  digitalWrite(MOTOR_2_PWM, LOW);
+  analogWrite(MOTOR_2_DIR, pwmValue);
 }
 
 // function - recieve data from UDP sender
@@ -143,12 +143,12 @@ void loop() {
         strip.show();
         break;
       case 'L':
-        left(150);
+        left(225);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
       case 'R':
-        right(150);
+        right(225);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
