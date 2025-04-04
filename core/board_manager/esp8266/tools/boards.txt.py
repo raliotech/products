@@ -40,7 +40,7 @@ import getopt
 import re
 import json
 
-requiredboards = [ 'generic']
+requiredboards = [ 'generic' ]
 
 ################################################################
 # serial upload speed order in menu
@@ -274,35 +274,35 @@ boards = collections.OrderedDict([
                   'note: - number = ((GPIO15 << 2) \| (GPIO0 << 1) \| GPIO2);',
                   ],
     }),
-    ( 'mercury1', {
+    ('mercury1', {
         'name': 'Mercury 1.0',
         'opts': {
             '.build.board': 'mercury',
             '.build.variant': 'mercury_v1',
-            },
+        },
         'macro': [
             'resetmethod_nodemcu',
             'flashmode_dio',
             'flashfreq_40',
             '4M'
-            ],
-        'desc': [ 'Mercury, board designed by Ralio Tech based on ESP8266 core.',
-                  ],
+        ],
+        'desc': ['Mercury, board designed by Ralio Tech based on ESP8266 core.',
+                 ],
     }),
-( 'mercury2', {
+    ('mercury2', {
         'name': 'Mercury 2.0',
         'opts': {
             '.build.board': 'mercury',
             '.build.variant': 'mercury_v2',
-            },
+        },
         'macro': [
             'resetmethod_nodemcu',
             'flashmode_dio',
             'flashfreq_40',
             '4M'
-            ],
-        'desc': [ 'Mercury, board designed by Ralio Tech based on ESP8266 core.',
-                  ],
+        ],
+        'desc': ['Mercury, board designed by Ralio Tech based on ESP8266 core.',
+                 ],
     })
 	])
 
