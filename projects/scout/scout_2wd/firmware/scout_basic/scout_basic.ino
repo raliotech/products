@@ -21,10 +21,11 @@
 #include <Arduino.h>
 
 // define ultrasonic pins
-const uint8_t uss_trigPin = D8;
-const uint8_t uss_echoPin = D7;
+const int trigPin = D7;
+const int echoPin = D8;
 double dogo_stop_distance = 0.0;
 uint8_t uss_measure_samples = 3;
+double uss_dist_measure_alpha = 0.9;
 
 // program variables
 uint16_t delay_prog = 1000;
@@ -36,6 +37,8 @@ void init_hardware() {
   pinMode(MOTOR_2_PWM, OUTPUT);
   pinMode(MOTOR_1_DIR, OUTPUT);
   pinMode(MOTOR_2_DIR, OUTPUT);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
 }
 
 int pwmValueReverse(int pwmValue) {
@@ -98,12 +101,12 @@ void spin_left(int pwmValue) {
 int measureDistance() {
   double uss_distance = 0.0;
   for (int i = 0; i < uss_measure_samples; i++) {
-    digitalWrite(uss_trigPin, LOW);
+    digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
-    digitalWrite(uss_trigPin, HIGH);
+    digitalWrite(trigPin, HIGH);
     delayMicroseconds(10);
-    digitalWrite(uss_trigPin, LOW);
-    long echo_time = pulseIn(uss_echoPin, HIGH);
+    digitalWrite(trigPin, LOW);
+    long echo_time = pulseIn(echoPin, HIGH);
     uss_distance += echo_time * 0.034 / 2;
     delay(10);
   }
@@ -120,22 +123,17 @@ void setup() {
 void loop() {
   analogWriteResolution(analogResolution);
   dogo_stop_distance = measureDistance();
-  if (dogo_stop_distance > 5) {
-    forward(255);
-    delay(delay_prog * 3);
-    brake();
-    delay(delay_prog * 1);
-    spin_right(255);
-    delay(delay_prog * 3);
-    brake();
+  Serial.println(dogo_stop_distance);
+  if (dogo_stop_distance > 10) {
+    forward(200);
     delay(delay_prog * 1);
   } else {
-    backward(255);
-    delay(delay_prog * 3);
+    backward(200);
+    delay(delay_prog * 1);
     brake();
     delay(delay_prog * 1);
-    spin_left(255);
-    delay(delay_prog * 3);
+    spin_left(200);
+    delay(delay_prog * 1);
     brake();
     delay(delay_prog * 1);
   }
