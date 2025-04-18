@@ -1,3 +1,24 @@
+// *************************
+//
+// RALIO TECHNOLOGIES LLP
+//
+// *************************
+
+// udp_smart_home.ino
+// This code controls a smart home, enabling wireless connection to drive IoT nodes.
+// The smart home is equipped with temeprature sensor, servo motor, brushed dc motor, motion sensor, two LED lamps.
+
+// Electronics needed
+// Any Ralio microcontroller board: Below code is specific to Mercury v2
+// 1x dc motors
+// 1x servo motor
+// 1x DHT11 sensor
+// 1x PIR motion sensor
+// 2x LED Lamp boards
+
+// board: Mercury v2
+
+
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 #include <DHT.h>
