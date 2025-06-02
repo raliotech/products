@@ -28,32 +28,32 @@
                   }
                ],
                "toolsDependencies": [
-            {
-              "packager": "ralio",
-              "version": "3.1.0-gcc10.3-e5f9fec",
-              "name": "xtensa-lx106-elf-gcc"
-            },
-            {
-              "packager": "ralio",
-              "version": "3.1.0-gcc10.3-e5f9fec",
-              "name": "mkspiffs"
-            },
-            {
-              "packager": "ralio",
-              "version": "3.1.0-gcc10.3-e5f9fec",
-              "name": "mklittlefs"
-            },
-            {
-              "packager": "ralio",
-              "version": "3.7.2-post1",
-              "name": "python3"
-            }
-          ],
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "xtensa-lx106-elf-gcc"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "mkspiffs"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "mklittlefs"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.7.2-post2",
+                     "name": "python3"
+                  }
+               ],
                "help": {
                   "online": "https://esp8266.com/arduino"
                },
-               "size": "40281635",
-               "checksum": "SHA-256:0c915dc8e4d6ef07c9f1dd2589a595de6e932ff5bf032a5f8ec67c1cabd4bd16"
+               "size": "39954178",
+               "checksum": "SHA-256:8289c07359f9d0ce62526dea37b3919afbf25dd2f9695eeca4c4596e9bc08409"
             },
             {
                "category": "ESP8266",

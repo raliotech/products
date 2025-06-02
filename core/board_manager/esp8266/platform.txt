@@ -2,16 +2,8 @@
 # ESP8266 platform
 # ------------------------------
 
-# For more info:
-# https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5-3rd-party-Hardware-specification
-
-name=ESP8266 Boards (3.1.2)
-version=3.1.2
-
-# These will be removed by the packager script when doing a JSON release
-
-
-
+name=Ralio
+version=1.2.0
 
 runtime.tools.signing={runtime.platform.path}/tools/signing.py
 runtime.tools.elf2bin={runtime.platform.path}/tools/elf2bin.py
