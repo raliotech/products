@@ -12,6 +12,52 @@
             {
                "category": "ESP8266",
                "name": "Ralio",
+               "url": "https://github.com/raliotech/products/releases/download/ralio_v1.2.0/ralio-1.2.0.zip",
+               "version": "1.2.0",
+               "architecture": "esp8266",
+               "archiveFileName": "ralio-1.2.0.zip",
+               "boards": [
+                  {
+                     "name": "Mercury 1.0"
+                  },
+                  {
+                     "name": "Mercury 2.0"
+                  },
+                  {
+                     "name": "Mercury 3.0"
+                  }
+               ],
+               "toolsDependencies": [
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "xtensa-lx106-elf-gcc"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "mkspiffs"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.2.0-gcc10.3-c791b74",
+                     "name": "mklittlefs"
+                  },
+                  {
+                     "packager": "ralio",
+                     "version": "3.7.2-post2",
+                     "name": "python3"
+                  }
+               ],
+               "help": {
+                  "online": "https://esp8266.com/arduino"
+               },
+               "size": "29317624",
+               "checksum": "SHA-256:2c6d7673c27c50680b3b7fbb2971ec24895a41c2c9fea664b1243547f6554a45"
+            },
+            {
+               "category": "ESP8266",
+               "name": "Ralio",
                "url": "https://github.com/raliotech/products/releases/download/ralio_v1.1.1/ralio-1.1.1.zip",
                "version": "1.1.1",
                "architecture": "esp8266",
