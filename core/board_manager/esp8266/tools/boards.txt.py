@@ -40,7 +40,7 @@ import getopt
 import re
 import json
 
-requiredboards = [ 'generic' ]
+requiredboards = [ 'generic']
 
 ################################################################
 # serial upload speed order in menu
@@ -112,25 +112,30 @@ boards = collections.OrderedDict([
                   '+-----------------+------------+------------------+',
                   '| GND             |            | GND              |',
                   '+-----------------+------------+------------------+',
-                  '| TX or GPIO2\*   |            | RX               |',
+                  '| TX or GPIO2     |            |                  |',
+                  '| [#tx_or_gpio2]_ | RX         |                  |',
                   '+-----------------+------------+------------------+',
                   '| RX              |            | TX               |',
                   '+-----------------+------------+------------------+',
                   '| GPIO0           | PullUp     | DTR              |',
                   '+-----------------+------------+------------------+',
-                  '| Reset\*         | PullUp     | RTS              |',
+                  '| Reset           |            |                  |',
+                  '| [#reset]_       | PullUp     | RTS              |',
                   '+-----------------+------------+------------------+',
-                  '| GPIO15\*        | PullDown   |                  |',
+                  '| GPIO15          |            |                  |',
+                  '| [#gpio15]_      | PullDown   |                  |',
                   '+-----------------+------------+------------------+',
-                  '| CH\_PD          | PullUp     |                  |',
+                  '| CH\\_PD          |            |                  |',
+                  '| [#ch_pd]_       | PullUp     |                  |',
                   '+-----------------+------------+------------------+',
                   '',
-                  '-  Note',
-                  '-  GPIO15 is also named MTDO',
-                  '-  Reset is also named RSBT or REST (adding PullUp improves the',
+                  '.. rubric:: Notes',
+                  '',
+                  '.. [#tx_or_gpio2] GPIO15 is also named MTDO',
+                  '.. [#reset] Reset is also named RSBT or REST (adding PullUp improves the',
                   '   stability of the module)',
-                  '-  GPIO2 is alternative TX for the boot loader mode',
-                  '-  **Directly connecting a pin to VCC or GND is not a substitute for a',
+                  '.. [#gpio15] GPIO2 is alternative TX for the boot loader mode',
+                  '.. [#ch_pd] **Directly connecting a pin to VCC or GND is not a substitute for a',
                   '   PullUp or PullDown resistor, doing this can break upload management',
                   '   and the serial console, instability has also been noted in some',
                   '   cases.**',
@@ -161,15 +166,16 @@ boards = collections.OrderedDict([
                   '+---------------+------------+------------------+',
                   '| GPIO0         |            | GND              |',
                   '+---------------+------------+------------------+',
-                  '| Reset         |            | RTS\*            |',
+                  '| Reset         |            | RTS [#rts]_      |',
                   '+---------------+------------+------------------+',
                   '| GPIO15        | PullDown   |                  |',
                   '+---------------+------------+------------------+',
-                  '| CH\_PD        | PullUp     |                  |',
+                  '| CH\\_PD        | PullUp     |                  |',
                   '+---------------+------------+------------------+',
                   '',
-                  '-  Note',
-                  '-  if no RTS is used a manual power toggle is needed',
+                  '.. rubric:: Notes',
+                  '',
+                  '.. [#rts] if no RTS is used a manual power toggle is needed',
                   '',
                   'Minimal Hardware Setup for Running only',
                   '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~',
@@ -187,7 +193,7 @@ boards = collections.OrderedDict([
                   '+----------+------------+----------------+',
                   '| GPIO15   | PullDown   |                |',
                   '+----------+------------+----------------+',
-                  '| CH\_PD   | PullUp     |                |',
+                  '| CH\\_PD   | PullUp     |                |',
                   '+----------+------------+----------------+',
                   '',
                   'Minimal',
@@ -249,7 +255,11 @@ boards = collections.OrderedDict([
                   'boot mode',
                   '~~~~~~~~~',
                   '',
-                  'the first value respects the pin setup of the Pins 0, 2 and 15.',
+                  'the first value respects the pin setup of the Pins 0, 2 and 15',
+                  '',
+                  '.. code-block::',
+                  '',
+                  '    Number = (GPIO15 << 2) | (GPIO0 << 1) | GPIO2',
                   '',
                   '+----------+----------+---------+---------+-------------+',
                   '| Number   | GPIO15   | GPIO0   | GPIO2   | Mode        |',
@@ -271,7 +281,6 @@ boards = collections.OrderedDict([
                   '| 7        | 3.3V     | 3.3V    | 3.3V    | SDIO        |',
                   '+----------+----------+---------+---------+-------------+',
                   '',
-                  'note: - number = ((GPIO15 << 2) \| (GPIO0 << 1) \| GPIO2);',
                   ],
     }),
     ('mercury1', {
@@ -286,8 +295,9 @@ boards = collections.OrderedDict([
             'flashfreq_40',
             '4M'
         ],
-        'desc': ['Mercury, board designed by Ralio Tech based on ESP8266 core.',
-                 ],
+        'desc': [
+            'Mercury Development Board, with onboard motor driver and easy-connect for servo motors, designed versatile use.',
+            ],
     }),
     ('mercury2', {
         'name': 'Mercury 2.0',
@@ -301,8 +311,25 @@ boards = collections.OrderedDict([
             'flashfreq_40',
             '4M'
         ],
-        'desc': ['Mercury, board designed by Ralio Tech based on ESP8266 core.',
-                 ],
+        'desc': [
+            'Mercury Development Board, with onboard motor driver and easy-connect for servo motors, designed versatile use.',
+            ],
+    }),
+    ('mercury3', {
+        'name': 'Mercury 3.0',
+        'opts': {
+            '.build.board': 'mercury',
+            '.build.variant': 'mercury_v3',
+        },
+        'macro': [
+            'resetmethod_nodemcu',
+            'flashmode_dio',
+            'flashfreq_40',
+            '4M'
+        ],
+        'desc': [
+            'Mercury Development Board, with onboard motor driver and easy-connect for servo motors, designed versatile use. Now comes with 3A onboard buck converter.',
+            ],
     })
 	])
 
@@ -321,6 +348,7 @@ macros = {
         ( '.build.core', 'esp8266' ),
         ( '.build.variant', 'generic' ),
         ( '.build.spiffs_pagesize', '256' ),
+        ( '.build.debug_optim', '' ),
         ( '.build.debug_port', '' ),
         ( '.build.debug_level', '' ),
         ]),
@@ -636,6 +664,12 @@ def all_debug ():
             ( '.menu.dbg.Serial1.build.debug_port', '-DDEBUG_ESP_PORT=Serial1' ),
             ( '.menu.lvl.None____', 'None' ),
             ( '.menu.lvl.None____.build.debug_level', '' ),
+            ( '.menu.optim.Smallest', 'None' ),
+            ( '.menu.optim.Smallest.build.debug_optim', '-Os' ),
+            ( '.menu.optim.Lite', 'Lite' ),
+            ( '.menu.optim.Lite.build.debug_optim', '-Os -fno-optimize-sibling-calls' ),
+            ( '.menu.optim.Full', 'Optimum' ),
+            ( '.menu.optim.Full.build.debug_optim', '-Og' ),
         ])
 
     for optlist in options:
@@ -895,13 +929,13 @@ def all_flash_map ():
             print("generated: flash map config file (in cores/esp8266/FlashMap.h)")
 
     return {
-        'autoflash': {
-            '.menu.eesz.autoflash': 'Mapping defined by Hardware and Sketch',
-            '.menu.eesz.autoflash.build.flash_size': '16M',
-            '.menu.eesz.autoflash.build.flash_ld': 'eagle.flash.auto.ld',
-            '.menu.eesz.autoflash.build.extra_flags': '-DFLASH_MAP_SUPPORT=1',
-            '.menu.eesz.autoflash.upload.maximum_size': '1044464',
-        },
+        'autoflash': collections.OrderedDict([
+            ('.menu.eesz.autoflash', 'Mapping defined by Hardware and Sketch'),
+            ('.menu.eesz.autoflash.build.flash_size', '16M'),
+            ('.menu.eesz.autoflash.build.flash_ld', 'eagle.flash.auto.ld'),
+            ('.menu.eesz.autoflash.build.extra_flags', '-DFLASH_MAP_SUPPORT=1'),
+            ('.menu.eesz.autoflash.upload.maximum_size', '1044464')
+        ]),
         '512K': f512,
           '1M':  f1m,
           '2M':  f2m,
@@ -951,6 +985,17 @@ def sdk ():
 
 ################################################################
 
+def float_in_iram ():
+    return { 'iramfloat': collections.OrderedDict([
+                        ('.menu.iramfloat.no', 'in IROM'),
+                        ('.menu.iramfloat.no.build.iramfloat', '-DFP_IN_IROM'),
+                        ('.menu.iramfloat.yes', 'allowed in ISR'),
+                        ('.menu.iramfloat.yes.build.iramfloat', '-DFP_IN_IRAM'),
+                    ])
+           }
+
+################################################################
+
 def all_boards ():
 
     if boardsgen or boardslocalgen:
@@ -978,6 +1023,7 @@ def all_boards ():
     macros.update(led('led',    led_default, range(0,led_max+1)))
     macros.update(led('led216', 2,           { 16 }))
     macros.update(sdk())
+    macros.update(float_in_iram())
 
     if boardfilteropt or excludeboards:
         print('#')
@@ -1016,12 +1062,14 @@ def all_boards ():
     print('menu.ResetMethod=Reset Method')
     print('menu.dbg=Debug port')
     print('menu.lvl=Debug Level')
+    print('menu.optim=Debug Optimization')
     print('menu.ip=lwIP Variant')
     print('menu.vt=VTables')
     print('menu.exception=C++ Exceptions')
     print('menu.stacksmash=Stack Protection')
     print('menu.wipe=Erase Flash')
     print('menu.sdk=NONOS SDK Version')
+    print('menu.iramfloat=Floating Point operations')
     print('menu.ssl=SSL Support')
     print('menu.mmu=MMU')
     print('menu.non32xfer=Non-32-Bit Access')
@@ -1059,6 +1107,7 @@ def all_boards ():
             macrolist += speeds[default_speed]
 
         macrolist += [ 'autoflash' ]
+        macrolist += [ 'iramfloat' ]
 
         for block in macrolist:
             for optname in macros[block]:

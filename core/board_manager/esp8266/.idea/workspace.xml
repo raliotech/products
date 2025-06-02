@@ -2,7 +2,1542 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9d72bbc-11f3-4a23-9742-e50cf7a32e88" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../projects/scout/scout_2wd/firmware/scout_basic/scout_basic.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../../projects/scout/scout_2wd/firmware/scout_basic/scout_basic.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boards.txt" beforeDir="false" afterPath="$PROJECT_DIR$/boards.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloaders/eboot/eboot.c" beforeDir="false" afterPath="$PROJECT_DIR$/bootloaders/eboot/eboot.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootloaders/eboot/eboot.elf" beforeDir="false" afterPath="$PROJECT_DIR$/bootloaders/eboot/eboot.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/Esp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/Esp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/Esp.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/Esp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/LwipIntf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/LwipIntf.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/LwipIntfDev.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/LwipIntfDev.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/StackThunk.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/StackThunk.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/StackThunk.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/StackThunk.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/Stream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/Stream.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/Stream.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/Stream.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/StreamSend.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/StreamSend.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/StreamString.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/StreamString.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/TZ.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/TZ.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/Udp.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/Udp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/Updater.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/Updater.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/Updater.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/Updater.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/WString.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/WString.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/cont.S" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/cont.S" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/cont.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/cont.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/cont_util.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/cont_util.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_features.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_features.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_flash_quirks.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_flash_quirks.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_noniso.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_noniso.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_phy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_phy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_postmortem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_postmortem.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_spi_utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_spi_utils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_esp8266_vm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_esp8266_vm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/core_version.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/core_version.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/debug.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/esp8266_undocumented.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/esp8266_undocumented.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/spi_utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/spi_utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/stdlib_noniso.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/stdlib_noniso.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/stdlib_noniso.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/stdlib_noniso.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/umm_malloc/Notes.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/umm_malloc/Notes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_local.c" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_local.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_malloc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_malloc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_malloc_cfg.h" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_malloc_cfg.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_poison.c" beforeDir="false" afterPath="$PROJECT_DIR$/cores/esp8266/umm_malloc/umm_poison.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ArduinoOTA/ArduinoOTA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ArduinoOTA/ArduinoOTA.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ArduinoOTA/ArduinoOTA.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ArduinoOTA/ArduinoOTA.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/DNSServer/examples/CaptivePortalAdvanced/CaptivePortalAdvanced.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/DNSServer/examples/CaptivePortalAdvanced/CaptivePortalAdvanced.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/DNSServer/examples/CaptivePortalAdvanced/handleHttp.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/DNSServer/examples/CaptivePortalAdvanced/handleHttp.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/DNSServer/examples/NAPTCaptivePortal/PortalRedirectHttp.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/DNSServer/examples/NAPTCaptivePortal/PortalRedirectHttp.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/BasicHttpsClient/BasicHttpsClient.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/BasicHttpsClient/BasicHttpsClient.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/BasicHttpsClient/certs.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/BasicHttpsClient/certs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/PostHttpClient/PostHttpClient.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/PostHttpClient/PostHttpClient.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/StreamHttpsClient/StreamHttpsClient.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/examples/StreamHttpsClient/StreamHttpsClient.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/src/ESP8266HTTPClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/src/ESP8266HTTPClient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/src/ESP8266HTTPClient.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266HTTPClient/src/ESP8266HTTPClient.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/AvrAdcLogger/AvrAdcLogger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/AvrAdcLogger/AvrAdcLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/BackwardCompatibility/BackwardCompatibility.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/BufferedPrint/BufferedPrint.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/DirectoryFunctions/DirectoryFunctions.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/ExFatLogger/ExFatLogger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/ExFatLogger/ExFatLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/MinimumSizeSdReader/MinimumSizeSdReader.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/OpenNext/OpenNext.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/QuickStart/QuickStart.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/ReadCsvFile/ReadCsvFile.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/RtcTimestampTest/RtcTimestampTest.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/SdErrorCodes/SdErrorCodes.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/SdFormatter/SdFormatter.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/SdInfo/SdInfo.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/SoftwareSpi/SoftwareSpi.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/TeensyDmaAdcLogger/TeensyDmaAdcLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/TeensyRtcTimestamp/TeensyRtcTimestamp.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/TeensySdioDemo/TeensySdioDemo.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/TeensySdioLogger/TeensySdioLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/UnicodeFilenames/UnicodeFilenames.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/UserChipSelectFunction/UserChipSelectFunction.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/UserSPIDriver/UserSPIDriver.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/bench/bench.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/AnalogLogger/AnalogLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/BaseExtCaseTest/BaseExtCaseTest.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/HelloWorld/HelloWorld.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/MiniSerial/MiniSerial.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/PrintBenchmarkSD/PrintBenchmarkSD.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/SD_Size/SD_Size.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/SdFatSize/SdFatSize.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/StreamParseInt/StreamParseInt.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/append/append.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/average/average.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/benchSD/benchSD.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/bufstream/bufstream.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/cin_cout/cin_cout.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/eventlog/eventlog.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/fgetsRewrite/fgetsRewrite.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/readlog/readlog.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/#attic/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/AnalogBinLogger/AnalogBinLogger.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/AnalogBinLogger/AnalogBinLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/DirectoryFunctions/DirectoryFunctions.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/LongFileName.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/A long name can be 255 characters.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/LFN,NAME.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/MIXCASE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/Not_8_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/OK%83.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/STD_8_3.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/With Blank.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/With.Two dots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/lower.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LongFileName/testFiles/mixed.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLogger/LowLatencyLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLogger/UserFunctions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLogger/UserTypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerADXL345/LowLatencyLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerADXL345/LowLatencyLoggerADXL345.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerADXL345/UserFunctions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerADXL345/UserTypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerADXL345/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerMPU6050/LowLatencyLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerMPU6050/LowLatencyLoggerMPU6050.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerMPU6050/UserFunctions.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/LowLatencyLoggerMPU6050/UserTypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/OpenNext/OpenNext.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/PrintBenchmark/PrintBenchmark.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/QuickStart/QuickStart.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/RawWrite/RawWrite.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/ReadCsv/ReadCsv.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/ReadCsvArray/ReadCsvArray.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/ReadCsvStream/ReadCsvStream.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/ReadWrite/ReadWrite.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/STM32Test/STM32Test.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/SdFormatter/SdFormatter.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/SdInfo/SdInfo.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/SoftwareSpi/SoftwareSpi.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/StdioBench/StdioBench.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/TeensySdioDemo/TeensySdioDemo.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/Timestamp/Timestamp.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/TwoCards/TwoCards.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/VolumeFreeSpace/VolumeFreeSpace.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/bench/bench.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/dataLogger/dataLogger.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/fgets/fgets.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/formatting/formatting.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/getline/getline.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/rename/rename.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/examplesV1/wipe/wipe.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/examples/rename/rename.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/USB_Host_Shield/USB_Host_Shield_2.0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/USB_Host_Shield/UsbHostShieldDiff.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/USB_Host_Shield/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/attic/PrintBasic.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/attic/PrintBasic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/attic/PrintTemplates.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/attic/SysCallBareUno.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/cpplint.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/cpplint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/extras/cpplint.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/library.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/BufferedPrint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/DigitalPin.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/SoftSPI.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/AvrDevelopersGpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/BobuinoGpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/GpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/LeonardoGpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/MegaGpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/SleepingBeautyGpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/Standard1284GpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/Teensy2GpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/Teensy2ppGpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/boards/UnoGpioPinMap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/DigitalIO/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatDbg.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatFile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatFile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatFilePrint.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatFileWrite.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatFormatter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatFormatter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatLib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatName.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatPartition.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatPartition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatVolume.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/ExFatLib/ExFatVolume.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatDbg.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatFile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatFile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatFileLFN.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatFilePrint.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatFileSFN.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatFormatter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatFormatter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatLib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatName.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatPartition.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatPartition.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatVolume.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FatLib/FatVolume.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FreeStack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FreeStack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FsLib/FsFile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FsLib/FsFile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FsLib/FsLib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FsLib/FsNew.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FsLib/FsNew.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FsLib/FsVolume.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/FsLib/FsVolume.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/MinimumSerial.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/MinimumSerial.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/RingBuf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/CPPLINT.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdCard.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdCardInfo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdCardInfo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdCardInterface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdSpiCard.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdSpiCard.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdioCard.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdioTeensy.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdCard/SdioTeensy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdFat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SdFatConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiArduinoDriver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiArtemis.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiAvr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiBareUnoDriver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiBaseClass.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiChipSelect.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiDriver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiDue.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiESP.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiLibDriver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiParticle.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiSTM32.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiSTM32Core.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiSoftDriver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/SpiDriver/SdSpiTeensy3.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/ArduinoFiles.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/BlockDevice.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/BlockDeviceInterface.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/CPPLINT.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/CompileDateTime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/DebugMacros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FmtNumber.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FmtNumber.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsApiConstants.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsCache.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsCache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsDateTime.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsDateTime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsName.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsName.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsStructs.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsStructs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsUtf.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/FsUtf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/SysCall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/upcase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/common/upcase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/ArduinoStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/StdioStream.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/StdioStream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/StreamBaseClass.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/bufstream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/fstream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/ios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/iostream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/istream.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/istream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/ostream.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/iostream/ostream.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266SdFat/src/sdios.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/FSBrowser/FSBrowser.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/FSBrowser/FSBrowser.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/Graph/Graph.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/Graph/Graph.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/HelloServer/HelloServer.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/HelloServer/HelloServer.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/HelloServerBearSSL/HelloServerBearSSL.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/HelloServerBearSSL/HelloServerBearSSL.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/WebServer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/WebServer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/WebServer/WebServer.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/WebServer/WebServer.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/WebServer/builtinfiles.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/examples/WebServer/builtinfiles.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/ESP8266WebServer-impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/ESP8266WebServer-impl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/ESP8266WebServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/ESP8266WebServer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/Parsing-impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/Parsing-impl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/detail/RequestHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/detail/RequestHandler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/detail/RequestHandlersImpl.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/detail/RequestHandlersImpl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/uri/UriRegex.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WebServer/src/uri/UriRegex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_CertStore/certs-from-mozilla.py" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_CertStore/certs-from-mozilla.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_MaxFragmentLength/BearSSL_MaxFragmentLength.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_MaxFragmentLength/BearSSL_MaxFragmentLength.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Server/BearSSL_Server.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Server/BearSSL_Server.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Server/DO-NOT-USE-THESE-CERTS-IN-YOUR-OWN-APPS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Server/cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Server/key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_ServerClientCert/BearSSL_ServerClientCert.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_ServerClientCert/BearSSL_ServerClientCert.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Validation/BearSSL_Validation.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Validation/BearSSL_Validation.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Validation/certs.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/BearSSL_Validation/certs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/HTTPSRequest/HTTPSRequest.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/HTTPSRequest/HTTPSRequest.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/HTTPSRequest/certs.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/HTTPSRequest/certs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/WiFiEvents/WiFiEvents.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/WiFiEvents/WiFiEvents.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/WiFiTelnetToSerial/WiFiTelnetToSerial.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/examples/WiFiTelnetToSerial/WiFiTelnetToSerial.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ArduinoWiFiServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ArduinoWiFiServer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiAP.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiAP.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiAP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiMulti.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiMulti.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiSTA.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiScan.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiScan.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/ESP8266WiFiScan.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiClient.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiClient.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiClientSecureBearSSL.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiServer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiServer.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiServer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiServerSecureBearSSL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiServerSecureBearSSL.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiUdp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiUdp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiUdp.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/WiFiUdp.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/enable_wifi_at_boot_time.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/enable_wifi_at_boot_time.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/include/slist.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266WiFi/src/include/slist.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266httpUpdate/src/ESP8266httpUpdate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266httpUpdate/src/ESP8266httpUpdate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266httpUpdate/src/ESP8266httpUpdate.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266httpUpdate/src/ESP8266httpUpdate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266mDNS/examples/OTA-mDNS-LittleFS/OTA-mDNS-LittleFS.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266mDNS/examples/OTA-mDNS-LittleFS/OTA-mDNS-LittleFS.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266mDNS/src/LEAmDNS.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266mDNS/src/LEAmDNS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266mDNS/src/LEAmDNS_Control.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266mDNS/src/LEAmDNS_Control.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/ESP8266mDNS/src/LEAmDNS_Structs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/ESP8266mDNS/src/LEAmDNS_Structs.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/README.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/AdvancedChatServer/AdvancedChatServer.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/BarometricPressureWebServer/BarometricPressureWebServer.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/ChatServer/ChatServer.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/DhcpAddressPrinter/DhcpAddressPrinter.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/DhcpChatServer/DhcpChatServer.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/LinkStatus/LinkStatus.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/TelnetClient/TelnetClient.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/UDPSendReceiveString/UDPSendReceiveString.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/UdpNtpClient/UdpNtpClient.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/WebClient/WebClient.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/WebClientRepeating/WebClientRepeating.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/examples/WebServer/WebServer.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/keywords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/library.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/Dhcp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/Dhcp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/Dns.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/Dns.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/Ethernet.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/Ethernet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/EthernetClient.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/EthernetClient.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/EthernetServer.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/EthernetServer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/EthernetUdp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/EthernetUdp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/socket.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/utility/w5100.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Ethernet/src/utility/w5100.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/I2S/examples/InputSerialPlotter/InputSerialPlotter.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/I2S/examples/InputSerialPlotter/InputSerialPlotter.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/I2S/examples/SimpleTone/SimpleTone.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/I2S/examples/SimpleTone/SimpleTone.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/examples/SpeedTest/SpeedTest.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/LittleFS/examples/SpeedTest/SpeedTest.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/DESIGN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/SPEC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/bd/lfs_filebd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/bd/lfs_filebd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/bd/lfs_rambd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/bd/lfs_rambd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/bd/lfs_testbd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/bd/lfs_testbd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/lfs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/lfs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/lfs_util.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/lfs_util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/coverage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/explode_asserts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/prefix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/readblock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/readmdir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/readtree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/stack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/structs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/summary.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/scripts/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_alloc.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_attrs.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_badblocks.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_dirs.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_entries.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_evil.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_exhaustion.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_files.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_interspersed.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_move.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_orphans.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_paths.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_relocations.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_seek.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_superblocks.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/lib/littlefs/tests/test_truncate.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/LittleFS/src/LittleFS.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/LittleFS/src/LittleFS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/Netdump/examples/Netdump/Netdump.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/Netdump/examples/Netdump/Netdump.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/examples/bitpattern/bitpattern.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/examples/loopback/loopback.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/examples/onewiretest/onewiretest.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/examples/onreceive/onreceive.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/examples/repeater/repeater.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/examples/swsertest/swsertest.ino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/keywords.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/library.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/library.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/src/SoftwareSerial.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/src/SoftwareSerial.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/src/circular_queue/Delegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/src/circular_queue/MultiDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/src/circular_queue/circular_queue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/src/circular_queue/circular_queue_mp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/SoftwareSerial/src/circular_queue/ghostl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/TFT_Touch_Shield_V2/examples/tftbmp/tftbmp.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/TFT_Touch_Shield_V2/examples/tftbmp/tftbmp.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/TFT_Touch_Shield_V2/examples/tftbmp2/tftbmp2.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/TFT_Touch_Shield_V2/examples/tftbmp2/tftbmp2.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/esp8266/examples/GlobalBuildOptions/GlobalBuildOptions.ino.globals.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/esp8266/examples/GlobalBuildOptions/GlobalBuildOptions.ino.globals.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/esp8266/examples/LowPowerDemo/LowPowerDemo.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/esp8266/examples/LowPowerDemo/LowPowerDemo.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/esp8266/examples/NTP-TZ-DST/NTP-TZ-DST.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/esp8266/examples/NTP-TZ-DST/NTP-TZ-DST.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/esp8266/examples/SerialStress/SerialStress.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/esp8266/examples/SerialStress/SerialStress.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/esp8266/examples/StreamString/StreamString.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/esp8266/examples/StreamString/StreamString.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/esp8266/examples/TestEspApi/TestEspApi.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/esp8266/examples/TestEspApi/TestEspApi.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/lwIP_Ethernet/src/EthernetCompat.h" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/lwIP_Ethernet/src/EthernetCompat.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/lwIP_PPP/examples/PPPServer/PPPServer.ino" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/lwIP_PPP/examples/PPPServer/PPPServer.ino" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libraries/lwIP_enc28j60/src/utility/enc28j60.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/lwIP_enc28j60/src/utility/enc28j60.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform.txt" beforeDir="false" afterPath="$PROJECT_DIR$/platform.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ci/build_docs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ci/build_docs.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/clang-format-core.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/clang-format-core.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/common.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/common.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/device/libraries/BSTest/src/BSTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/tests/device/libraries/BSTest/src/BSTest.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/common/ArduinoCatch.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/common/ArduinoCatch.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/common/MockTools.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/common/MockTools.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/common/MockWiFiServer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/common/MockWiFiServer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/common/mock.h" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/common/mock.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/common/noniso.c" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/common/noniso.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/common/queue.h" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/common/queue.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/common/strl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/common/strl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/host/sys/pgmspace.h" beforeDir="false" afterPath="$PROJECT_DIR$/tests/host/sys/pgmspace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/restyle.sh" beforeDir="false" afterPath="$PROJECT_DIR$/tests/restyle.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/TZupdate.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/boards.txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/boards.txt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cert.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/decoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/decoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/elf2bin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/elf2bin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/.gitlab-ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/esp_rfc2217_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espefuse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/base_fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/base_operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/emulate_efuse_controller_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32/emulate_efuse_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32/mem_definition.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32c3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32c3/emulate_efuse_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32c3/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32c3/mem_definition.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32c3/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s2/emulate_efuse_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s2/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s2/mem_definition.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s2/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s3beta2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s3beta2/emulate_efuse_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s3beta2/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s3beta2/mem_definition.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/esp32s3beta2/operations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/mem_definition_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espressif/efuse/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/espsecure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/esptool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/compare_stubs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/esptool_test_stub.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/miniz.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/rom_functions.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/slip.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/soc_support.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/stub_commands.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/stub_flasher.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/stub_io.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/include/stub_write_flash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/rom_32.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/rom_32c3.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/rom_32s2.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/rom_32s3.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/rom_8266.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/stub_32.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/stub_32c3.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/stub_32s2.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/stub_32s3.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/ld/stub_8266.ld" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/miniz.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/run_tests_with_stub.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/slip.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/stub_commands.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/stub_flasher.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/stub_io.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/stub_write_flash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/flasher_stub/wrap_stub.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/ci/multirun_with_pyenv.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/ci/run_test_on_chips_parallel.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/ci/setup_ci_build_env.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/ecdsa_secure_boot_signing_key2.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp32-app-cust-ver-info.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp32-app-template.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp32-bootloader.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp32-too-many-sections.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp8266-nonossdkv12-example.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp8266-nonossdkv20-at-v2.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp8266-nonosssdk20-iotdemo.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/elf2image/esp8266-openrtos-blink-v2.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/aes_key.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/bootloader_esp32.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/bootloader_esp32c3.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/bootloader_esp32s2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/bootloader_esp32s3.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/128bit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/192bit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/192bit_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/192bit_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/224bit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/256bit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/256bit_1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/efuse/256bit_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/esp8266_deepsleep.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/esp8266_sdk/4096_user1.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/esp8266_sdk/blank.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/esp8266_sdk/boot_v1.4(b1).bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/esp8266_sdk/esp_init_data_default.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/fifty_kb.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/helloworld-esp32.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/helloworld-esp32_edit.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/helloworld-esp8266.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/nodemcu-master-7-modules-2017-01-19-11-10-03-integer.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/one_kb.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/one_kb_all_ef.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/one_mb.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/one_mb_zeroes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/onebyte.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/partitions_singleapp.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/sector.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/unaligned.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/images/zerolength.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/256bit_iv.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/256bit_key.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader-encrypted-conf0.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader-encrypted-conf3.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader-encrypted-conf9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader-encrypted-confc.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader-encrypted.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader_digested.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader_multi_signed_v2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader_signed.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader_signed_v2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/bootloader_unsigned_v2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/digest_iv.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/ecdsa_secure_boot_signing_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/ecdsa_secure_boot_signing_key2.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/ecdsa_secure_boot_signing_key_pkcs8.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/ecdsa_secure_boot_signing_pubkey.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/ecdsa_secure_boot_signing_pubkey2.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/ef-flashencryption-key.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/hello-world-signed-encrypted.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/hello-world-signed.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_public_key_digest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_secure_boot_signing_key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_secure_boot_signing_key2.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_secure_boot_signing_key3.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_secure_boot_signing_key4.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_secure_boot_signing_pubkey.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_secure_boot_signing_pubkey2.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/secure_images/rsa_secure_boot_signing_pubkey4.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/test_espefuse.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/test_espefuse_host.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/test_espsecure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/test_esptool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/esptool/test/test_imagegen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/platformio-build.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/platformio-build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/CHANGES.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/MANIFEST.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/appendix.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/examples.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/pyserial.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/pyserial.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/pyserial_api.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/shortintro.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/tools.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/documentation/url_handlers.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/at_protocol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/port_publisher.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/port_publisher.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/rfc2217_server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/setup-miniterm-py2exe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/setup-rfc2217_server-py2exe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/setup-wxTerminal-py2exe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/tcp_serial_redirect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/wxSerialConfigDialog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/wxSerialConfigDialog.wxg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/wxTerminal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/examples/wxTerminal.wxg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/pylintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/rfc2217.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/rs485.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/serialcli.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/serialjava.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/serialposix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/serialutil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/serialwin32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/threaded/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/hexlify_codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/list_ports.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/list_ports_common.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/list_ports_linux.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/list_ports_osx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/list_ports_posix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/list_ports_windows.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/tools/miniterm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/protocol_alt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/protocol_cp2110.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/protocol_hwgrep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/protocol_loop.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/protocol_rfc2217.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/protocol_socket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/urlhandler/protocol_spy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/serial/win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/handlers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/handlers/protocol_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/run_all_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_advanced.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_asyncio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_cancel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_context.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_exclusive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_high_load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_iolib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_pty.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_readline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_rfc2217.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_rs485.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_settings_dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_threaded.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_timeout_class.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/pyserial/test/test_util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/include/bearssl/bearssl_git.h" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/include/bearssl/bearssl_git.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/include/ets_sys.h" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/include/ets_sys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ld/eagle.app.v6.common.ld.h" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/ld/eagle.app.v6.common.ld.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/libbearssl.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/libbearssl.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/libhal.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/libhal.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-1460-feat.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-1460-feat.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-1460.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-1460.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-536-feat.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-536-feat.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-536.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/liblwip2-536.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/liblwip6-1460-feat.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/liblwip6-1460-feat.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/liblwip6-536-feat.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/liblwip6-536-feat.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/libstdc++-exc.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/libstdc++-exc.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lib/libstdc++.a" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lib/libstdc++.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/Makefile.arduino" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/Makefile.open" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/README-CMake.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/cmake/common.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/cmake/lwip-builder.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/cmake/platform-esp8266.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/cmake/toolchain-esp8266.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/arch/cc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/arch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/err.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/ip.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/ip_addr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/mem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/netif.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/opt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/pbuf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/sys.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwip/timers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/lwipopts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-1.4-arduino/include/netif/etharp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-esp/lwip-esp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arch/cc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/history/lwipopts-203.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/history/meld-changes-from-203-to-210" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/history/meld-changes-from-diffs-203-to-210" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/history/meld-edit-lwipopts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/history/original-opts-203.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/history/original-opts-210.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/lwipopts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/arduino/meld-compare-changes-from-original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/esp-dhcpserver.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/esp-millis.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/esp-millis.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/esp-ping.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/esp-time.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/espconn.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/espconn_buf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/espconn_tcp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/espconn_udp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip-err-t.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip-git-hash.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip-git.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip-git.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip-helper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip/apps-esp/dhcpserver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip/apps-esp/espconn.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip/apps-esp/espconn_buf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip/apps-esp/espconn_tcp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip/apps-esp/espconn_udp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/lwip/apps-esp/ping.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue-lwip/open/lwipopts.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue/esp-missing.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue/glue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue/gluedebug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue/uprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/glue/uprint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/Makefile.build-lwip2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/Makefile.defs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/Makefile.glue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/Makefile.glue-esp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/Makefile.lwip2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/Makefile.patches" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/Makefile.rules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/make-lwip-hash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/patch-non-local-includes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/makefiles/patch-vendor-lwip14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/0002-sntp-Don-t-over-write-IPv6-NTP-server-when-processin.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/0003-dhcp-dhcp6-Ensure-that-DHCP-DHCPv6-DNS-server-update.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/cmakelists-optional-lwipdocs.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/cyclic-timers-to-pmem.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/dhcpv6-dns-fix-v3.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/igmp-check-up.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/ip6-in-header.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/ipv6-udp-local_ip-anytype.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/link6-autoconfig.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/napt-against-lwIP-1.4.patch.history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/napt-against-lwIP-2.0.3.patch.history" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/napt-h.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/napt.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/napt.patch.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/open/sdk-mem-macros.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/sys_now_inlined.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/tcp-random-port.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/time-wait.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/builder/patches/unapply-other-patches" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/include/lwip-git-hash.h" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lwip2/include/lwip-git-hash.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/lwip2/include/lwipopts.h" beforeDir="false" afterPath="$PROJECT_DIR$/tools/sdk/lwip2/include/lwipopts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/README-esp8266.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/BlobWriter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/CPU.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/CodeElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/CodeElementJump.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/CodeElementUInt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/CodeElementUIntExpr.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/CodeElementUIntInt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/CodeElementUIntUInt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/ConstData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/Opcode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeCall.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeConst.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeGetLocal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeJump.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeJumpIf.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeJumpIfNot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeJumpUncond.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodePutLocal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/OpcodeRet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/SType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/T0Comp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/TPointerBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/TPointerBlob.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/TPointerExpr.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/TPointerNull.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/TPointerXT.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/TValue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/Word.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/WordBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/WordData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/WordInterpreted.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/WordNative.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0/kern.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/T0Comp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/build/.do_not_remove" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/conf/Unix.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/conf/Unix32.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/conf/UnixClang.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/conf/Win.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/conf/esp8266.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/conf/esp8266m32.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/conf/samd20.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_aead.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_block.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_ec.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_hmac.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_kdf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_pem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_prf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_rand.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_rsa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_ssl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/bearssl_x509.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/inc/pgmspace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/mk/Defaults.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/mk/NMake.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/mk/Rules.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/mk/SingleUnix.mk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/mk/mkT0.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/mk/mkT0.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/mk/mkrules.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/cert-ee-ec+rsa.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/cert-ee-ec.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/cert-ee-rsa.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/cert-ica-ec.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/cert-ica-rsa.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/cert-root-ec.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/cert-root-rsa.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/chain-ec+rsa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/chain-ec.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/chain-rsa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/client_basic.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/custom_profile.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-ec.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-ee-ec.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-ee-rsa.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-ica-ec.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-ica-rsa.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-root-ec.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-root-rsa.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/key-rsa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/samples/server_basic.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/aead/ccm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/aead/eax.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/aead/gcm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/ccopy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/dec16be.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/dec16le.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/dec32be.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/dec32le.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/dec64be.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/dec64le.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/enc16be.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/enc16le.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/enc32be.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/enc32le.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/enc64be.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/enc64le.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/pemdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/pemdec.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/codec/pemenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_all_m15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_all_m31.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_c25519_i15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_c25519_i31.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_c25519_m15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_c25519_m31.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_c25519_m62.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_c25519_m64.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_curve25519.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_default.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_keygen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_p256_m15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_p256_m31.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_p256_m62.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_p256_m64.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_prime_i15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_prime_i31.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_pubkey.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_secp256r1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_secp384r1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ec_secp521r1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_atr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_default_sign_asn1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_default_sign_raw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_default_vrfy_asn1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_default_vrfy_raw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i15_bits.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i15_sign_asn1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i15_sign_raw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i15_vrfy_asn1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i15_vrfy_raw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i31_bits.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i31_sign_asn1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i31_sign_raw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i31_vrfy_asn1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_i31_vrfy_raw.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ec/ecdsa_rta.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/dig_oid.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/dig_size.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/ghash_ctmul.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/ghash_ctmul32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/ghash_ctmul64.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/ghash_pclmul.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/ghash_pwr8.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/md5.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/md5sha1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/mgf1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/multihash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/sha1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/sha2big.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/hash/sha2small.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/inner.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_add.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_bitlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_decmod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_decode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_decred.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_encode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_fmont.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_iszero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_moddiv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_modpow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_modpow2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_montmul.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_mulacc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_muladd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_ninv15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_reduce.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_rshift.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_sub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i15_tmont.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_add.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_bitlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_decmod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_decode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_decred.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_encode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_fmont.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_iszero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_moddiv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_modpow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_modpow2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_montmul.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_mulacc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_muladd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_ninv31.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_reduce.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_rshift.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_sub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i31_tmont.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_add.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_bitlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_decmod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_decode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_decred.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_div32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_encode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_fmont.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_iszero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_modpow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_montmul.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_mulacc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_muladd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_ninv32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_reduce.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_sub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i32_tmont.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/int/i62_modpow2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/kdf/hkdf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/kdf/shake.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/mac/hmac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/mac/hmac_ct.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rand/aesctr_drbg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rand/hmac_drbg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rand/sysrng.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_keygen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_modulus.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_oaep_decrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_oaep_encrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_pkcs1_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_pkcs1_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_priv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_privexp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_pss_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_pss_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_pub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_default_pubexp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_keygen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_modulus.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_oaep_decrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_oaep_encrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_pkcs1_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_pkcs1_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_priv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_privexp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_pss_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_pss_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_pub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i15_pubexp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_keygen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_keygen_inner.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_modulus.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_oaep_decrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_oaep_encrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_pkcs1_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_pkcs1_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_priv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_privexp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_pss_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_pss_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_pub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i31_pubexp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_oaep_decrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_oaep_encrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_pkcs1_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_pkcs1_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_priv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_pss_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_pss_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i32_pub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_keygen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_oaep_decrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_oaep_encrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_pkcs1_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_pkcs1_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_priv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_pss_sign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_pss_vrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_i62_pub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_oaep_pad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_oaep_unpad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_pkcs1_sig_pad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_pkcs1_sig_unpad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_pss_sig_pad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_pss_sig_unpad.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/rsa/rsa_ssl_decrypt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/settings.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/prf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/prf_md5sha1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/prf_sha256.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/prf_sha384.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_ccert_single_ec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_ccert_single_rsa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_client_default_rsapub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_client_full.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_aescbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_aesccm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_aesgcm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_chapol.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_descbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_ec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_ecdsa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_engine_default_rsavrfy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_hashes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_hs_client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_hs_client.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_hs_common.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_hs_server.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_hs_server.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_io.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_keyexport.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_lru.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_rec_cbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_rec_ccm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_rec_chapol.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_rec_gcm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_scert_single_ec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_scert_single_rsa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_full_ec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_full_rsa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_mine2c.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_mine2g.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_minf2c.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_minf2g.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_minr2g.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_minu2g.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/ssl/ssl_server_minv2g.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_big_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_big_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_big_ctr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_big_ctrcbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_big_dec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_big_enc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_common.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct64.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct64_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct64_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct64_ctr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct64_ctrcbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct64_dec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct64_enc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct_ctr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct_ctrcbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct_dec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_ct_enc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_pwr8.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_pwr8_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_pwr8_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_pwr8_ctr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_pwr8_ctrcbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_small_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_small_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_small_ctr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_small_ctrcbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_small_dec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_small_enc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_x86ni.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_x86ni_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_x86ni_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_x86ni_ctr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/aes_x86ni_ctrcbc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/chacha20_ct.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/chacha20_sse2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/des_ct.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/des_ct_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/des_ct_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/des_support.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/des_tab.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/des_tab_cbcdec.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/des_tab_cbcenc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/poly1305_ctmul.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/poly1305_ctmul32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/poly1305_ctmulq.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/symcipher/poly1305_i15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/asn1.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/asn1enc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/encode_ec_pk8der.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/encode_ec_rawder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/encode_rsa_pk8der.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/encode_rsa_rawder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/pkey_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/pkey_decoder.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/skey_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/skey_decoder.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/x509_decoder.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/x509_decoder.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/x509_knownkey.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/x509_minimal.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/x509_minimal.t0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/src/x509/x509_minimal_full.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/test_crypto.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/test_math.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/test_speed.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/test_x509.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/alltests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/dn-ee.der" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/dn-ica1.der" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/dn-ica2.der" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/dn-root-new.der" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/dn-root.der" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-badsig1.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-badsig2.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-cp1.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-cp2.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-cp3.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-cp4.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-dates.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-md5.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-names.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-names2.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-names3.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-names4.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p256-sha1.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p256-sha224.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p256-sha256.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p256-sha384.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p256-sha512.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p256.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p384.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-p521.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-sha1.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-sha224.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-sha384.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-sha512.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee-trailing.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ee.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica1-1016.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica1-1017.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica1-4096.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica1-p256.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica1-p384.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica1-p521.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica1.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2-1016.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2-1017.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2-4096.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2-notCA.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2-p256.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2-p384.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2-p521.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/ica2.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/junk.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/names.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/root-p256.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/root-p384.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/root-p521.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/test/x509/root.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/brssl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/brssl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/certs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/chain.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/client.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/errors.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/files.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/impl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/keys.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/names.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/server.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/skey.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/sslio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/ta.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/twrch.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/vector.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/verify.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/ssl/bearssl/tools/xmem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/bin/tgunzip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/makefile.b32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/makefile.dj2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/makefile.dmc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/makefile.mgw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/makefile.vc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/makefile.wat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgunzip/tgunzip.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgzip/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/examples/tgzip/tgzip.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/lib/empty.dir" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/adler32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/crc32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/defl_static.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/defl_static.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/genlz77.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/makefile.b32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/makefile.dj2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/makefile.dmc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/makefile.mgw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/makefile.vc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/makefile.wat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/nasm/crc32.nas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/nasm/nasmlcm.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/nasm/tinfzlib.nas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/tinf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/tinf_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/tinfgzip.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/tinflate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/tinfzlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/uzlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/src/uzlib_conf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/clang-ubsan-build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/corpus.md5sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/corpus.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs.ref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000000_sig_11_src_000000_op_flip1_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000001_sig_11_src_000000_op_flip1_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000002_sig_11_src_000000_op_flip1_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000003_sig_11_src_000000_op_flip1_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000004_sig_11_src_000000_op_flip1_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000005_sig_11_src_000000_op_flip1_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000006_sig_11_src_000000_op_flip1_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000007_sig_11_src_000000_op_flip2_pos_11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000008_sig_11_src_000000_op_flip2_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000009_sig_11_src_000000_op_flip2_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000010_sig_11_src_000000_op_flip4_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000011_sig_11_src_000000_op_flip8_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000012_sig_11_src_000000_op_arith8_pos_11_val__6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000013_sig_11_src_000000_op_arith8_pos_12_val_-9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000014_sig_11_src_000000_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000015_sig_11_src_000000_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000016_sig_11_src_000000_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000017_sig_11_src_000000_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000018_sig_11_src_000000_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000019_sig_11_src_000000_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000020_sig_11_src_000000_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000021_sig_11_src_000000_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000022_sig_11_src_000000_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000023_sig_06_src_000000_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000024_sig_06_src_000000_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000025_sig_06_src_000033_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000026_sig_11_src_000033_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000027_sig_11_src_000040_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000028_sig_11_src_000070_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000029_sig_11_src_000070_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000030_sig_11_src_000070_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000031_sig_11_src_000090_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000032_sig_11_src_000096_op_flip1_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000033_sig_11_src_000096_op_int16_pos_14_val__1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000034_sig_11_src_000104_op_int32_pos_16_val_-32768" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000035_sig_11_src_000118_op_flip1_pos_58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000036_sig_11_src_000187_op_flip1_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000037_sig_11_src_000187_op_flip1_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/00/id_000038_sig_11_src_000187_op_flip1_pos_15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000000_sig_11_src_000001_op_flip1_pos_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000001_sig_11_src_000001_op_flip1_pos_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000002_sig_11_src_000001_op_flip2_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000003_sig_11_src_000001_op_flip4_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000004_sig_11_src_000001_op_flip4_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000005_sig_11_src_000001_op_flip16_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000006_sig_11_src_000001_op_arith8_pos_12_val_-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000007_sig_11_src_000001_op_int16_pos_12_val_be__1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000008_sig_11_src_000001_op_havoc_rep_32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000009_sig_11_src_000001_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000010_sig_07_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000011_sig_11_src_000001_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000012_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000013_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000014_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000015_sig_11_src_000001_op_havoc_rep_32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000016_sig_07_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000017_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000018_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000019_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000020_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000021_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000022_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000023_sig_06_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000024_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000025_sig_11_src_000005_op_flip1_pos_22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000026_sig_11_src_000005_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000027_sig_11_src_000005_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000028_sig_11_src_000005_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000029_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000030_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000031_sig_11_src_000005_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000032_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000033_sig_11_src_000005_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000034_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/id_000035_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000000_sig_11_src_000001_op_flip1_pos_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000002_sig_11_src_000001_op_flip2_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000003_sig_11_src_000001_op_flip4_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000004_sig_11_src_000001_op_flip4_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000005_sig_11_src_000001_op_flip16_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000006_sig_11_src_000001_op_arith8_pos_12_val_-21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000007_sig_11_src_000001_op_int16_pos_12_val_be__1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000009_sig_11_src_000001_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000010_sig_07_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000011_sig_11_src_000001_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000012_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000013_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000014_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000015_sig_11_src_000001_op_havoc_rep_32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000016_sig_07_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000017_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000018_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000019_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000020_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000021_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000022_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000023_sig_06_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000024_sig_11_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000025_sig_11_src_000005_op_flip1_pos_22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000026_sig_11_src_000005_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000027_sig_11_src_000005_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000028_sig_11_src_000005_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000029_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000030_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000031_sig_11_src_000005_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000032_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000033_sig_11_src_000005_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000034_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/01/min_id_000035_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/02/id_000000_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/02/id_000001_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/02/id_000002_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/02/id_000003_sig_11_src_000002_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000000_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000001_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000002_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000003_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000004_sig_11_src_000002_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000005_sig_11_src_000005_op_flip1_pos_20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000006_sig_11_src_000005_op_flip1_pos_22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000007_sig_11_src_000005_op_flip4_pos_24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000008_sig_11_src_000005_op_arith8_pos_3_val__10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000009_sig_11_src_000005_op_arith8_pos_3_val__18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000010_sig_11_src_000005_op_int8_pos_23_val_-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000011_sig_11_src_000005_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000012_sig_11_src_000005_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000013_sig_11_src_000005_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000014_sig_11_src_000005_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000015_sig_11_src_000005_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000016_sig_11_src_000005_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000017_sig_11_src_000005_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000018_sig_11_src_000082_op_flip32_pos_19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000019_sig_11_src_000082_op_int32_pos_19_val_be__65535" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000020_sig_11_src_000155_op_flip2_pos_28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000021_sig_11_src_000166_op_flip2_pos_10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000022_sig_11_src_000156_op_int16_pos_26_val_-129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000023_sig_11_src_000193_op_int16_pos_31_val_be__32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000024_sig_11_src_000230_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000025_sig_11_src_000230_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000026_sig_11_src_000245_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000027_sig_11_src_000254_op_flip1_pos_32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000028_sig_11_src_000079_op_int32_pos_20_val_-128" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000029_sig_11_src_000247_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000030_sig_11_src_000257_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000031_sig_11_src_000257_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000032_sig_11_src_000248_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000033_sig_11_src_000291_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000034_sig_11_src_000301_op_havoc_rep_64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000035_sig_11_src_000252_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000036_sig_11_src_000310_op_arith32_pos_20_val_be_-8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000037_sig_11_src_000319_000163_op_splice_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000038_sig_11_src_000320_op_flip1_pos_27" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000039_sig_11_src_000320_op_ext_AO_pos_43" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000040_sig_11_src_000326_op_havoc_rep_32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000041_sig_11_src_000016_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000042_sig_11_src_000205_000322_op_splice_rep_64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/03/id_000043_sig_11_src_000001_000321_op_splice_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000000_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000001_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000002_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000003_sig_11_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000004_sig_11_src_000034_op_int32_pos_44_val__1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000005_sig_11_src_000063_op_int32_pos_17_val__1000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000006_sig_11_src_000019_000004_op_splice_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000007_sig_11_src_000047_000264_op_splice_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000008_sig_11_src_000194_000266_op_splice_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000009_sig_11_src_000134_000005_op_splice_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/04/id_000010_sig_11_src_000220_000226_op_splice_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000000_sig_06_src_000001_op_flip8_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000001_sig_06_src_000001_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000002_sig_06_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000003_sig_06_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000004_sig_06_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000005_sig_06_src_000012_op_flip1_pos_13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000006_sig_06_src_000012_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000007_sig_06_src_000108_op_arith16_pos_14_val_-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000008_sig_06_src_000003_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000009_sig_06_src_000140_op_flip1_pos_15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000010_sig_06_src_000092_op_flip4_pos_3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000011_sig_06_src_000155_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000012_sig_06_src_000163_000116_op_splice_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000013_sig_06_src_000171_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/05/id_000014_sig_06_src_000170_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/06/id_000001_sig_06_src_000001_op_havoc_rep_16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/06/id_000002_sig_06_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/06/id_000003_sig_06_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/06/id_000004_sig_06_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/06/id_000005_sig_06_src_000001_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/06/id_000007_sig_06_src_000121_op_arith8_pos_12_val__26" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/06/id_000008_sig_06_src_000137_op_flip1_pos_58" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/07/id_000000_sig_06_src_000001_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/07/id_000001_sig_06_src_000019_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/07/id_000002_sig_06_src_000021_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/08/id_000000_sig_06_src_000157_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000000_sig_11_src_000001_op_int16_pos_11_val_be_-128" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000001_sig_11_src_000001_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000002_sig_11_src_000023_op_flip2_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000003_sig_11_src_000023_op_arith8_pos_14_val_-28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000004_sig_11_src_000075_op_flip4_pos_61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000005_sig_11_src_000075_op_arith8_pos_57_val_-5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000006_sig_11_src_000075_op_arith16_pos_62_val__28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000007_sig_11_src_000075_op_havoc_rep_32" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000008_sig_11_src_000133_op_arith8_pos_13_val_-34" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000009_sig_11_src_000133_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000010_sig_11_src_000133_op_havoc_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000011_sig_11_src_000151_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000012_sig_11_src_000212_op_arith8_pos_45_val__9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000013_sig_11_src_000212_op_int32_pos_15_val__32767" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000014_sig_11_src_000212_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000015_sig_11_src_000087_op_arith8_pos_20_val__11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000016_sig_11_src_000098_op_flip1_pos_13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000017_sig_11_src_000098_op_flip2_pos_13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000018_sig_11_src_000098_op_flip4_pos_12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000019_sig_11_src_000098_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000020_sig_11_src_000133_op_havoc_rep_2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000021_sig_11_src_000134_op_int16_pos_13_val_be_-128" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000022_sig_11_src_000218_op_flip2_pos_40" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000023_sig_11_src_000218_op_int16_pos_111_val__0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000025_sig_11_src_000235_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000026_sig_11_src_000143_op_arith8_pos_19_val__3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000027_sig_11_src_000024_000141_op_splice_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000028_sig_11_src_000219_op_arith16_pos_62_val_be_-23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000031_sig_11_src_000256_op_flip2_pos_480" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000032_sig_11_src_000256_op_flip4_pos_248" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000033_sig_11_src_000256_op_flip4_pos_364" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000034_sig_06_src_000256_op_arith8_pos_499_val__8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000036_sig_11_src_000256_000131_op_splice_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000037_sig_11_src_000260_op_flip2_pos_264" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000038_sig_11_src_000260_op_arith16_pos_254_val_-29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000039_sig_11_src_000260_op_int16_pos_397_val__0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000040_sig_11_src_000272_000023_op_splice_rep_4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/decomp-bad-inputs/09/id_000041_sig_11_src_000253_op_havoc_rep_8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/sdk/uzlib/tests/run-decomp-bad-inputs.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +1558,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "gg__mercuryUpdate",
     "last_opened_file_path": "/Users/gaurang/raliotech/products/core/board_manager/esp8266"
   }
 }]]></component>
