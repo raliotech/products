@@ -79,7 +79,7 @@ protected:
 
 public:
   WiFiServer(const IPAddress& addr, uint16_t port);
-  WiFiServer(uint16_t port = 23);
+  WiFiServer(uint16_t port);
   virtual ~WiFiServer() {}
   WiFiClient accept(); // https://www.arduino.cc/en/Reference/EthernetServerAccept
   WiFiClient available(uint8_t* status = NULL) __attribute__((deprecated("Renamed to accept().")));
@@ -100,8 +100,6 @@ public:
   uint16_t port() const;
   void close();
   void stop();
-  void end();
-  explicit operator bool();
 
   using ClientType = WiFiClient;
 
@@ -111,11 +109,6 @@ protected:
 
   static err_t _s_accept(void *arg, tcp_pcb* newpcb, err_t err);
   static void _s_discard(void* server, ClientContext* ctx);
-
-#if CORE_MOCK
-  void _mockUnclaimed ();
-#endif
-
 };
 
 #endif

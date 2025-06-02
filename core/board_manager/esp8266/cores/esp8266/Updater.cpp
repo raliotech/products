@@ -70,7 +70,6 @@ bool UpdaterClass::begin(size_t size, int command, int ledPin, uint8_t ledOn) {
 #ifdef DEBUG_UPDATER
     DEBUG_UPDATER.println(F("[begin] already running"));
 #endif
-    _setError(UPDATE_ERROR_RUNNING_ALREADY);
     return false;
   }
 
@@ -87,7 +86,7 @@ bool UpdaterClass::begin(size_t size, int command, int ledPin, uint8_t ledOn) {
     _setError(UPDATE_ERROR_BOOTSTRAP);
     return false;
   }
-
+  
 #ifdef DEBUG_UPDATER
   if (command == U_FS) {
     DEBUG_UPDATER.println(F("[begin] Update Filesystem."));
@@ -134,7 +133,7 @@ bool UpdaterClass::begin(size_t size, int command, int ledPin, uint8_t ledOn) {
 
     //make sure that the size of both sketches is less than the total space (updateEndAddress)
     if(updateStartAddress < currentSketchSize) {
-      _setError(UPDATE_ERROR_SPACE);
+      _setError(UPDATE_ERROR_SPACE);    
       return false;
     }
   }
@@ -163,7 +162,6 @@ bool UpdaterClass::begin(size_t size, int command, int ledPin, uint8_t ledOn) {
 #ifdef DEBUG_UPDATER
     DEBUG_UPDATER.println(F("[begin] Unknown update command."));
 #endif
-    _setError(UPDATE_ERROR_UNKNOWN_COMMAND);
     return false;
   }
 
@@ -284,7 +282,7 @@ bool UpdaterClass::end(bool evenIfRemaining){
     _hash->begin();
     for (uint32_t offset = 0; offset < binSize; offset += sizeof(buff)) {
       auto len = std::min(sizeof(buff), binSize - offset);
-      ESP.flashRead(_startAddress + offset, buff, len);
+      ESP.flashRead(_startAddress + offset, reinterpret_cast<uint32_t *>(&buff[0]), len);
       _hash->add(buff, len);
     }
     _hash->end();
@@ -406,7 +404,7 @@ bool UpdaterClass::_writeBuffer(){
       modifyFlashMode = true;
     }
   }
-
+  
   if (eraseResult) {
     if(!_async) yield();
     writeResult = ESP.flashWrite(_currentAddress, _buffer, _bufferLen);
@@ -490,7 +488,7 @@ bool UpdaterClass::_verifyEnd() {
         uint8_t buf[4] __attribute__((aligned(4)));
         if(!ESP.flashRead(_startAddress, (uint32_t *) &buf[0], 4)) {
             _currentAddress = (_startAddress);
-            _setError(UPDATE_ERROR_READ);
+            _setError(UPDATE_ERROR_READ);            
             return false;
         }
 
@@ -502,7 +500,7 @@ bool UpdaterClass::_verifyEnd() {
             return true;
         } else if (buf[0] != 0xE9) {
             _currentAddress = (_startAddress);
-            _setError(UPDATE_ERROR_MAGIC_BYTE);
+            _setError(UPDATE_ERROR_MAGIC_BYTE);            
             return false;
         }
 
@@ -514,7 +512,7 @@ bool UpdaterClass::_verifyEnd() {
         // check if new bin fits to SPI flash
         if(bin_flash_size > ESP.getFlashChipRealSize()) {
             _currentAddress = (_startAddress);
-            _setError(UPDATE_ERROR_NEW_FLASH_CONFIG);
+            _setError(UPDATE_ERROR_NEW_FLASH_CONFIG);            
             return false;
         }
 #endif
@@ -650,12 +648,6 @@ String UpdaterClass::getErrorString() const {
     break;
   case UPDATE_ERROR_OOM:
     out = F("Out of memory");
-    break;
-  case UPDATE_ERROR_RUNNING_ALREADY:
-    out = F("Update already running");
-    break;
-  case UPDATE_ERROR_UNKNOWN_COMMAND:
-    out = F("Unknown update command");
     break;
   default:
     out = F("UNKNOWN");

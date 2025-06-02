@@ -15,8 +15,8 @@ extern "C" {
 }
 #endif
 
-// Set up output on the first serial port
-// (can be any Stream, if needed)
+// Set up output serial port (could be a SoftwareSerial
+// if really wanted).
 
 Stream& ehConsolePort(Serial);
 

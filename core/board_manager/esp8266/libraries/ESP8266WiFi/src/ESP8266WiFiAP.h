@@ -45,7 +45,6 @@ class ESP8266WiFiAPClass {
         uint8_t softAPgetStationNum();
 
         IPAddress softAPIP();
-        IPAddress softAPbroadcastIP();
 
         uint8_t* softAPmacAddress(uint8_t* mac);
         String softAPmacAddress(void);
