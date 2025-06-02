@@ -13,7 +13,6 @@
 
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
-
 #include "certs.h"
 
 #ifndef STASSID
@@ -24,7 +23,7 @@
 const char* ssid = STASSID;
 const char* password = STAPSK;
 
-X509List cert(cert_Sectigo_ECC_Domain_Validation_Secure_Server_CA);
+X509List cert(cert_DigiCert_Global_Root_CA);
 
 void setup() {
   Serial.begin(115200);
@@ -63,7 +62,7 @@ void setup() {
   Serial.print("Connecting to ");
   Serial.println(github_host);
 
-  Serial.printf("Using certificate: %s\n", cert_Sectigo_ECC_Domain_Validation_Secure_Server_CA);
+  Serial.printf("Using certificate: %s\n", cert_DigiCert_Global_Root_CA);
   client.setTrustAnchors(&cert);
 
   if (!client.connect(github_host, github_port)) {

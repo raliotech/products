@@ -52,8 +52,8 @@
                "help": {
                   "online": "https://esp8266.com/arduino"
                },
-               "size": "29317624",
-               "checksum": "SHA-256:2c6d7673c27c50680b3b7fbb2971ec24895a41c2c9fea664b1243547f6554a45"
+               "size": "40407800",
+               "checksum": "SHA-256:80af0beed96827650b9eedca85b4cdf3a0dd60b0884120a3280d9b257a81bc40"
             },
             {
                "category": "ESP8266",

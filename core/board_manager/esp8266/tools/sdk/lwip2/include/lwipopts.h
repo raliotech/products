@@ -3,10 +3,11 @@
 #define __CUSTOM_EXTRA_DEFINES__
 
 #endif
+
 #ifndef MYLWIPOPTS_H
 #define MYLWIPOPTS_H
 
-/* opt.h version lwip-2.1.3 for esp8266 */
+// opt.h version lwip-2.1.0rc1 for esp8266
 
 /**
  * @file
@@ -995,7 +996,7 @@
 #if !LWIP_IPV4
 /* disable AUTOIP when IPv4 is disabled */
 #undef LWIP_AUTOIP
-#define LWIP_AUTOIP                     0
+#define LWIP_AUTOIP 0
 #endif /* !LWIP_IPV4 */
 
 /**
@@ -1563,7 +1564,7 @@
  * LWIP_PBUF_REF_T: Refcount type in pbuf.
  * Default width of u8_t can be increased if 255 refs are not enough for you.
  */
-#if !defined LWIP_PBUF_REF_T || defined __DOXYGEN__
+#ifndef LWIP_PBUF_REF_T
 #define LWIP_PBUF_REF_T                 u8_t
 #endif
 
@@ -2446,7 +2447,7 @@
  * LWIP_IPV6_FORWARD==1: Forward IPv6 packets across netifs
  */
 #if !defined LWIP_IPV6_FORWARD || defined __DOXYGEN__
-#define LWIP_IPV6_FORWARD               0
+#define LWIP_IPV6_FORWARD               0 // 0
 #endif
 
 /**
@@ -2682,7 +2683,7 @@
  * servers to the DNS module.
  */
 #if !defined LWIP_ND6_RDNSS_MAX_DNS_SERVERS || defined __DOXYGEN__
-#define LWIP_ND6_RDNSS_MAX_DNS_SERVERS  0
+#define LWIP_ND6_RDNSS_MAX_DNS_SERVERS  0 // 0
 #endif
 /**
  * @}
@@ -2721,7 +2722,7 @@
  * void dhcp6_set_ntp_servers(u8_t num_ntp_servers, ip_addr_t* ntp_server_addrs);
 */
 #if !defined LWIP_DHCP6_GET_NTP_SRV || defined __DOXYGEN__
-#define LWIP_DHCP6_GET_NTP_SRV          1
+#define LWIP_DHCP6_GET_NTP_SRV          1 // with 1: dhcp6_set_ntp_servers() must be implemented
 #endif
 
 /**
@@ -3508,6 +3509,9 @@
 #if !defined DHCP6_DEBUG || defined __DOXYGEN__
 #define DHCP6_DEBUG                     LWIP_DBG_OFF
 #endif
+/**
+ * @}
+ */
 
 /**
  * NAPT_DEBUG: Enable debugging for NAPT.
@@ -3515,10 +3519,6 @@
 #ifndef NAPT_DEBUG
 #define NAPT_DEBUG                       LWIP_DBG_OFF
 #endif
-
-/**
- * @}
- */
 
 /**
  * LWIP_TESTMODE: Changes to make unit test possible
@@ -3566,12 +3566,8 @@
 #define PPPOS_SUPPORT       IP_NAPT         // because we don't have proxyarp yet
 #define PPP_SUPPORT         PPPOS_SUPPORT
 #define PPP_SERVER          1
+#define PPP_DEBUG           ULWIPDEBUG
 #define PRINTPKT_SUPPORT    ULWIPDEBUG
-
-#if ULWIPDEBUG
-#define PPP_DEBUG           LWIP_DBG_ON
-#define PING_DEBUG          LWIP_DBG_ON
-#endif
 
 #ifdef __cplusplus
 extern "C" {
@@ -3714,4 +3710,4 @@ void tcp_kill_timewait (void);
 } // extern "C"
 #endif
 
-#endif /* MYLWIPOPTS_H */
+#endif // MYLWIPOPTS_H

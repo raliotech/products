@@ -27,7 +27,9 @@ void handleRoot() {
 boolean captivePortal() {
   if (!isIp(server.hostHeader()) && server.hostHeader() != (String(myHostname) + ".local")) {
     Serial.println("Request redirected to captive portal");
-    server.redirect(String("http://") + toStringIp(server.client().localIP()));
+    server.sendHeader("Location", String("http://") + toStringIp(server.client().localIP()), true);
+    server.send(302, "text/plain", "");  // Empty content inhibits Content-length header so we have to close the socket ourselves.
+    server.client().stop();              // Stop is needed because we sent no content length
     return true;
   }
   return false;
@@ -89,7 +91,12 @@ void handleWifiSave() {
   Serial.println("wifi save");
   server.arg("n").toCharArray(ssid, sizeof(ssid) - 1);
   server.arg("p").toCharArray(password, sizeof(password) - 1);
-  server.redirect("wifi");
+  server.sendHeader("Location", "wifi", true);
+  server.sendHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+  server.sendHeader("Pragma", "no-cache");
+  server.sendHeader("Expires", "-1");
+  server.send(302, "text/plain", "");  // Empty content inhibits Content-length header so we have to close the socket ourselves.
+  server.client().stop();              // Stop is needed because we sent no content length
   saveCredentials();
   connect = strlen(ssid) > 0;  // Request WLAN connect with new credentials if there is a SSID
 }

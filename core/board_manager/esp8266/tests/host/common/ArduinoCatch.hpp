@@ -24,15 +24,13 @@
 
 std::ostream& operator<<(std::ostream&, const String&);
 
-namespace Catch
-{
+namespace Catch {
 
 std::string toString(const String&);
 
 template<>
-struct StringMaker<String>
-{
+struct StringMaker<String> {
     static std::string convert(const String&);
 };
 
-}  // namespace Catch
+} // namespace Catch

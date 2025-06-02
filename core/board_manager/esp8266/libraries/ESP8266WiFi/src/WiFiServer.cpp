@@ -173,12 +173,15 @@ void WiFiServer::stop() {
     close();
 }
 
-void WiFiServer::end() {
-    close();
-}
-
-WiFiServer::operator bool() {
-  return (status() != CLOSED);
+template<typename T>
+T* slist_append_tail(T* head, T* item) {
+    if (!head)
+        return item;
+    T* last = head;
+    while(last->next())
+        last = last->next();
+    last->next(item);
+    return head;
 }
 
 err_t WiFiServer::_accept(tcp_pcb* apcb, err_t err) {

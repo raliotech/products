@@ -1,16 +1,17 @@
 
 /*
   Serial read/write/verify/benchmark
-  Using Serial0 for internal loopback
-  Using Serial1 for logging
+  Using internal loopback
+  Using EspSoftwareSerial library for logging
 
   Sketch meant for debugging only
   Released to public domain
 */
 
 #include <ESP8266WiFi.h>
+#include <SoftwareSerial.h>
 
-#define LOGBAUD 115200       // logger on console for humans
+#define SSBAUD 115200        // logger on console for humans
 #define BAUD 3000000         // hardware serial stress test
 #define BUFFER_SIZE 4096     // may be useless to use more than 2*SERIAL_SIZE_RX
 #define SERIAL_SIZE_RX 1024  // Serial.setRxBufferSize()
@@ -19,9 +20,6 @@
 
 #define TIMEOUT 5000
 #define DEBUG(x...)  // x
-
-#define READING_PIN 4
-#define TIMEOUT_PIN 5
 
 uint8_t buf[BUFFER_SIZE];
 uint8_t temp[BUFFER_SIZE];
@@ -53,18 +51,18 @@ void error(const char* what) {
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 
-  pinMode(READING_PIN, INPUT);
-  pinMode(TIMEOUT_PIN, INPUT);
-
   Serial.begin(BAUD);
   Serial.swap();  // RX=GPIO13 TX=GPIO15
   Serial.setRxBufferSize(SERIAL_SIZE_RX);
 
-  Serial1.begin(LOGBAUD);  // RX=NONE TX=GPIO2
-  logger = &Serial1;
-
+  // using HardwareSerial0 pins,
+  // so we can still log to the regular usbserial chips
+  SoftwareSerial* ss = new SoftwareSerial(3, 1);
+  ss->begin(SSBAUD);
+  ss->enableIntTx(false);
+  logger = ss;
   logger->println();
-  logger->printf("\n\nOn Serial1 for logging\n");
+  logger->printf("\n\nOn Software Serial for logging\n");
 
   int baud = Serial.baudRate();
   logger->printf(ESP.getFullVersion().c_str());
@@ -81,7 +79,8 @@ void setup() {
   // bind RX and TX
   USC0(0) |= (1 << UCLBE);
 
-  while (Serial.read() == -1);
+  while (Serial.read() == -1)
+    ;
   if (Serial.hasOverrun()) { logger->print("overrun?\n"); }
 
   timeout = (start_ms = last_ms = millis()) + TIMEOUT;
@@ -141,13 +140,15 @@ void loop() {
     timeout = (last_ms = now_ms) + TIMEOUT;
   }
 
-  if (reading && (digitalRead(READING_PIN) == 0)) {
-    logger->println("now stopping reading, keeping writing");
-    reading = false;
-  }
-
-  if (digitalRead(TIMEOUT_PIN) == 0) {
-    testReadBytesTimeout ^= FAKE_INCREASED_AVAILABLE;
-    logger->printf("testing readBytes timeout: %d\n", !!testReadBytesTimeout);
-  }
+  if (logger->available()) switch (logger->read()) {
+      case 's':
+        logger->println("now stopping reading, keeping writing");
+        reading = false;
+        break;
+      case 't':
+        testReadBytesTimeout ^= FAKE_INCREASED_AVAILABLE;
+        logger->printf("testing readBytes timeout: %d\n", !!testReadBytesTimeout);
+        break;
+      default:;
+    }
 }

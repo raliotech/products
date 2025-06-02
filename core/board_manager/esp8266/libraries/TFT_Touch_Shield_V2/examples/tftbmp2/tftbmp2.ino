@@ -99,7 +99,8 @@ void setup() {
 
   if (!SD.begin(PIN_SD_CS)) {
     Serial.println("failed!");
-    while (1);  // init fail, die here
+    while (1)
+      ;  // init fail, die here
   }
 
   Serial.println("SD OK!");
@@ -140,7 +141,8 @@ void loop() {
 
   if (!bmpFile) {
     Serial.println("didn't find image");
-    while (1);
+    while (1)
+      ;
   }
 
   if (!bmpReadHeader(bmpFile)) {
@@ -151,7 +153,8 @@ void loop() {
   bmpdraw(bmpFile, 0, 0, 1);
   bmpFile.close();
 
-  while (1);
+  while (1)
+    ;
 }
 
 /*********************************************/

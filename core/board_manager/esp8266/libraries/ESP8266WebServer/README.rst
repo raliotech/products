@@ -54,10 +54,8 @@ Client request handlers
 
 .. code:: cpp
 
-  RequestHandler<ServerType>& on();
-  bool removeRoute();
+  void on();
   void addHandler();
-  bool removeHandler();
   void onNotFound();
   void onFileUpload();	
 
@@ -66,25 +64,8 @@ Client request handlers
 .. code:: cpp
 
   server.on("/", handlerFunction);
-  server.removeRoute("/"); // Removes any route which points to "/" and has HTTP_ANY attribute
-  server.removeRoute("/", HTTP_GET); // Removes any route which points to "/" and has HTTP_GET attribute
   server.onNotFound(handlerFunction); // called when handler is not assigned
   server.onFileUpload(handlerFunction); // handle file uploads
-
-Client request filters
-^^^^^^^^^^^^^^^^^^^^^^
-
-.. code:: cpp
-  
-  RequestHandler<ServerType>& setFilter();
-
-*Example:*
-
-More details about this in `Filters.ino` example.
-
-.. code:: cpp
-
-  server.on("/", handlerFunction).setFilter(ON_AP_FILTER)
 
 Sending responses to the client
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
