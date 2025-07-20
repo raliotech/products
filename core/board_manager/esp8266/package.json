@@ -1,6 +1,6 @@
 {
     "name": "framework-ralioesp8266",
-    "description": "Ralio Tech boards based on ESP8266 Core",
+    "description": "Mercury v3: Microcontroller Board Based on ESP8266",
     "url": "https://github.com/raliotech/engineering",
-    "version": "1.2.0"
+    "version": "1.2.1"
 }
