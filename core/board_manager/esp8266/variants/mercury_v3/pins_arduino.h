@@ -51,15 +51,15 @@ static const uint8_t D10  = 10;
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
+// SPI
+#undef PIN_SPI_SS
+#define PIN_SPI_SS   (10)
+
 // Brushed DC Motors
 static const uint8_t MOTOR_1_DIR = D3;
 static const uint8_t MOTOR_1_PWM = D1;
 static const uint8_t MOTOR_2_DIR = D4;
 static const uint8_t MOTOR_2_PWM = D2;
-
-//Ultrasonic Sensor
-static const uint8_t USST = D7;
-static const uint8_t USSE = D8;
 
 //RGB LED
 static const uint8_t RGB = D10;
