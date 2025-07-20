@@ -27,7 +27,7 @@ uint16_t delay_prog = 1000;
 int analogResolution = 8;
 
 // WiFi credentials
-const char* ssid = "SCOUT";
+const char* ssid = "SCOUT-2WD";
 const char* password = "scout@2025";
 
 // UDP setup
@@ -35,7 +35,7 @@ WiFiUDP Udp;
 unsigned int localUdpPort = 8888;  // local port to listen on
 char incomingPacket[255];
 
-// #define RGB 0  // default pin RGB LED WS2812 on Mercury
+#define RGB 0  // default pin RGB LED WS2812 on Mercury
 #define NUM_LEDS 1  // Number of LEDs on the Mercury
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, RGB, NEO_GRB + NEO_KHZ800);
 
@@ -132,7 +132,7 @@ void loop() {
     // Serial.printf("Received message: %s\n", incomingPacket);
     switch (incomingPacket[0]) {
       case 'F':
-        forward(200);
+        forward(250);
         delay(50);
         strip.setPixelColor(0, 0, 0, 0);
         strip.show();
@@ -143,17 +143,17 @@ void loop() {
         strip.show();
         break;
       case 'L':
-        left(150);
+        left(225);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
       case 'R':
-        right(150);
+        right(255);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
       case 'B':
-        backward(200);
+        backward(250);
         delay(50);
         strip.setPixelColor(0, 255, 255, 255);
         strip.show();

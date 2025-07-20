@@ -55,11 +55,11 @@ const long sendInterval = 10000;  // 10 seconds
 
 // Pin configuration for the curtain and PIR sensor
 const int pir_sensor = D3;
-const int fan_pos = D2;        // Motor PWM control pin
-const int fan_neg = D4;        // Motor direction pin
-const int hall_light = D7;     // LED PWM positive pin
-const int bedroom_light = D8;  // LED PWM negative pin
-const int rgb_led = D0;
+const int fan_pos = D2;       // Motor PWM control pin
+const int fan_neg = D4;       // Motor direction pin
+const int hall_light = D7;    // LED PWM positive pin
+const int bedroom_light = D8; // LED PWM negative pin
+const int buzz = D1;          // Buzzer
 
 int windowPos = 10;
 bool hall_light_state = false;
@@ -144,9 +144,6 @@ void handleUDP() {
   }
   controlLights(hall_light_state, bedroom_light_state);
 }
-
-
-
 
 // Function to send temperature and humidity data via UDP
 void sendTemperatureAndHumidity() {

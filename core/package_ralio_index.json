@@ -29,22 +29,22 @@
                ],
                "toolsDependencies": [
                   {
-                     "packager": "ralio",
+                     "packager": "ral",
                      "version": "3.2.0-gcc10.3-c791b74",
                      "name": "xtensa-lx106-elf-gcc"
                   },
                   {
-                     "packager": "ralio",
+                     "packager": "ral",
                      "version": "3.2.0-gcc10.3-c791b74",
                      "name": "mkspiffs"
                   },
                   {
-                     "packager": "ralio",
+                     "packager": "ral",
                      "version": "3.2.0-gcc10.3-c791b74",
                      "name": "mklittlefs"
                   },
                   {
-                     "packager": "ralio",
+                     "packager": "ral",
                      "version": "3.7.2-post2",
                      "name": "python3"
                   }
