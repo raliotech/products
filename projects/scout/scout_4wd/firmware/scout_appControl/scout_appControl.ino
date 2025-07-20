@@ -27,7 +27,7 @@ uint16_t delay_prog = 1000;
 int analogResolution = 8;
 
 // WiFi credentials
-const char* ssid = "SCOUT";
+const char* ssid = "SCOUT-S";
 const char* password = "scout@2025";
 
 // UDP setup
@@ -35,21 +35,23 @@ WiFiUDP Udp;
 unsigned int localUdpPort = 8888;  // local port to listen on
 char incomingPacket[255];
 
-// #define RGB 0  // default pin RGB LED WS2812 on Mercury
+#define RGB 0  // default pin RGB LED WS2812 on Mercury
 #define NUM_LEDS 1  // Number of LEDs on the Mercury
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, RGB, NEO_GRB + NEO_KHZ800);
+
+
 
 // user functions
 void init_hardware() {
   pinMode(MOTOR_1_PWM, OUTPUT);
   pinMode(MOTOR_2_PWM, OUTPUT);
-  pinMode(MOTOR_1_DIR, OUTPUT);
+  pinMode(D10, OUTPUT);
   pinMode(MOTOR_2_DIR, OUTPUT);
 }
 
 void cruise() {
   digitalWrite(MOTOR_1_PWM, LOW);
-  digitalWrite(MOTOR_1_DIR, LOW);
+  digitalWrite(D10, LOW);
 
   digitalWrite(MOTOR_2_PWM, LOW);
   digitalWrite(MOTOR_2_DIR, LOW);
@@ -58,7 +60,7 @@ void cruise() {
 void forward(int pwmValue) {
   // 0 < pwmValue < 255;
   analogWrite(MOTOR_1_PWM, pwmValue);
-  digitalWrite(MOTOR_1_DIR, LOW);
+  digitalWrite(D10, LOW);
 
   analogWrite(MOTOR_2_PWM, pwmValue);
   digitalWrite(MOTOR_2_DIR, LOW);
@@ -67,7 +69,7 @@ void forward(int pwmValue) {
 void backward(int pwmValue) {
   // 0 < pwmValue < 255;
   digitalWrite(MOTOR_1_PWM, LOW);
-  analogWrite(MOTOR_1_DIR, pwmValue);
+  analogWrite(D10, pwmValue);
 
   digitalWrite(MOTOR_2_PWM, LOW);
   analogWrite(MOTOR_2_DIR, pwmValue);
@@ -75,7 +77,7 @@ void backward(int pwmValue) {
 
 void brake() {
   digitalWrite(MOTOR_1_PWM, HIGH);
-  digitalWrite(MOTOR_1_DIR, HIGH);
+  digitalWrite(D10, HIGH);
 
   digitalWrite(MOTOR_2_PWM, HIGH);
   digitalWrite(MOTOR_2_DIR, HIGH);
@@ -84,7 +86,7 @@ void brake() {
 void left(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
   digitalWrite(MOTOR_1_PWM, LOW);
-  analogWrite(MOTOR_1_DIR, pwmValue);
+  analogWrite(D10, pwmValue);
 
   analogWrite(MOTOR_2_PWM, pwmValue);
   digitalWrite(MOTOR_2_DIR, LOW);
@@ -93,7 +95,7 @@ void left(int pwmValue) {
 void right(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
   analogWrite(MOTOR_1_PWM, pwmValue);
-  digitalWrite(MOTOR_1_DIR, LOW);
+  digitalWrite(D10, LOW);
 
   digitalWrite(MOTOR_2_PWM, LOW);
   analogWrite(MOTOR_2_DIR, pwmValue);
@@ -132,7 +134,7 @@ void loop() {
     // Serial.printf("Received message: %s\n", incomingPacket);
     switch (incomingPacket[0]) {
       case 'F':
-        forward(200);
+        forward(255);
         delay(50);
         strip.setPixelColor(0, 0, 0, 0);
         strip.show();
@@ -143,17 +145,17 @@ void loop() {
         strip.show();
         break;
       case 'L':
-        left(225);
+        left(250);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
       case 'R':
-        right(225);
+        right(250);
         strip.setPixelColor(0, 220, 40, 10);
         strip.show();
         break;
       case 'B':
-        backward(200);
+        backward(255);
         delay(50);
         strip.setPixelColor(0, 255, 255, 255);
         strip.show();
