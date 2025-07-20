@@ -11,7 +11,7 @@ Download the latest stable version of Arduino IDE from the [Arduino website](htt
 - Start Arduino and open the Preferences window.
 - Enter the below .json file link into the *File > Preferences > Additional Boards Manager URLs* field of the Arduino IDE.
   ```json
-  https://raw.githubusercontent.com/raliotech/products/refs/heads/master/core/package_ralio_index.json
+  https://raw.githubusercontent.com/raliotech/products/master/core/package_ralio_index.json
   ```
 - You can add multiple URLs, separating them with commas.
 
