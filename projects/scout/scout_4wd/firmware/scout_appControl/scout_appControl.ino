@@ -14,7 +14,10 @@
 // Any Ralio microcontroller board: Below code is specific to Mercury v2
 // 2x dc motors
 
+// board: Mercury v3
+// 
 // board: Mercury v2
+// uncomment line 43
 
 #include <Arduino.h>
 #include <ESP8266WiFi.h>
@@ -36,7 +39,8 @@ unsigned int localUdpPort = 8888;  // local port to listen on
 char incomingPacket[255];
 int cmdCode = 0;
 
-// #define RGB 0  // default pin RGB LED WS2812 on Mercury
+// RGB
+// #define RGB 0  // default pin RGB LED WS2812 on Mercury <- uncomment for Mercury v2
 #define NUM_LEDS 1  // Number of LEDs on the Mercury
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, RGB, NEO_GRB + NEO_KHZ800);
 
@@ -84,7 +88,7 @@ void brake() {
 
 void left(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
-  analogWrite(MOTOR_1_PWM, int(pwmValue * 0.9));
+  analogWrite(MOTOR_1_PWM, int(pwmValue * 0.8));
   digitalWrite(MOTOR_1_DIR, LOW);
 
   analogWrite(MOTOR_2_PWM, pwmValue);
@@ -96,26 +100,26 @@ void right(int pwmValue) {
   analogWrite(MOTOR_1_PWM, pwmValue);
   digitalWrite(MOTOR_1_DIR, LOW);
 
-  digitalWrite(MOTOR_2_PWM, int(pwmValue * 0.9));
-  analogWrite(MOTOR_2_DIR, LOW);
+  analogWrite(MOTOR_2_PWM, int(pwmValue * 0.8));
+  digitalWrite(MOTOR_2_DIR, LOW);
 }
 
 void left_back(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
   digitalWrite(MOTOR_1_PWM, LOW);
-  analogWrite(MOTOR_1_DIR, int(pwmValue * 0.9));
+  analogWrite(MOTOR_1_DIR, int(pwmValue * 0.8));
 
-  analogWrite(MOTOR_2_PWM, LOW);
-  digitalWrite(MOTOR_2_DIR, pwmValue);
+  digitalWrite(MOTOR_2_PWM, LOW);
+  analogWrite(MOTOR_2_DIR, pwmValue);
 }
 
 void right_back(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
-  analogWrite(MOTOR_1_PWM, LOW);
-  digitalWrite(MOTOR_1_DIR, pwmValue);
+  digitalWrite(MOTOR_1_PWM, LOW);
+  analogWrite(MOTOR_1_DIR, pwmValue);
 
   digitalWrite(MOTOR_2_PWM, LOW);
-  analogWrite(MOTOR_2_DIR, int(pwmValue * 0.9));
+  analogWrite(MOTOR_2_DIR, int(pwmValue * 0.8));
 }
 
 // function - recieve data from UDP sender
@@ -187,7 +191,7 @@ void loop() {
         strip.show();
         break;
       case 3:
-        left(200);
+        left(224);
         for (int i = 0; i < NUM_LEDS / 2; i++) {
           strip.setPixelColor(i, 0, 0, 0);
         }
@@ -197,7 +201,7 @@ void loop() {
         strip.show();
         break;
       case 4:
-        right(200);
+        right(224);
         for (int i = 0; i < NUM_LEDS / 2; i++) {
           strip.setPixelColor(i, 250, 90, 0);
         }
