@@ -96,8 +96,8 @@ void right(int pwmValue) {
   analogWrite(MOTOR_1_PWM, pwmValue);
   digitalWrite(MOTOR_1_DIR, LOW);
 
-  digitalWrite(MOTOR_2_PWM, int(pwmValue * 0.9));
-  analogWrite(MOTOR_2_DIR, LOW);
+  analogWrite(MOTOR_2_PWM, int(pwmValue * 0.9));
+  digitalWrite(MOTOR_2_DIR, LOW);
 }
 
 void left_back(int pwmValue) {
@@ -105,14 +105,14 @@ void left_back(int pwmValue) {
   digitalWrite(MOTOR_1_PWM, LOW);
   analogWrite(MOTOR_1_DIR, int(pwmValue * 0.9));
 
-  analogWrite(MOTOR_2_PWM, LOW);
-  digitalWrite(MOTOR_2_DIR, pwmValue);
+  digitalWrite(MOTOR_2_PWM, LOW);
+  analogWrite(MOTOR_2_DIR, pwmValue);
 }
 
 void right_back(int pwmValue) {
   //PWM: 0 -> Slow; 255 -> Fast
-  analogWrite(MOTOR_1_PWM, LOW);
-  digitalWrite(MOTOR_1_DIR, pwmValue);
+  digitalWrite(MOTOR_1_PWM, LOW);
+  analogWrite(MOTOR_1_DIR, pwmValue);
 
   digitalWrite(MOTOR_2_PWM, LOW);
   analogWrite(MOTOR_2_DIR, int(pwmValue * 0.9));
