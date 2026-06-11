@@ -46,7 +46,16 @@ This project relies on Adafruit libraries for display handling.
 ![ST7735](images/st7735-library.png)
 
 ------------------------------------------------------------------------
-## 4. Configure Board Settings Connect your ESP32-S3 board and configure the following settings from the **Tools** menu. | Setting | Selection | | --- | --- | | **Board** | `ESP32S3 Dev Module` | | **USB CDC On Boot** | `Enabled` | | **PSRAM** | `OPI PSRAM` | | **Upload Mode** | `UART0 / Hardware CDC` |
+## 4. Configure Board Settings
+
+Connect your ESP32-S3 board and configure the following settings from the **Tools** menu.
+
+| Setting | Selection |
+| --- | --- |
+| Board | ESP32S3 Dev Module |
+| USB CDC On Boot | Enabled |
+| PSRAM | OPI PSRAM |
+| Upload Mode | UART0 / Hardware CDC |
 
 ### Reference
 
