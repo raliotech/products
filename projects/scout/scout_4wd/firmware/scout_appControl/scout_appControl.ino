@@ -28,7 +28,7 @@ int analogResolution = 8;
 
 // WiFi credentials
 const char* ssid = "SCOUT";
-const char* password = "scout@2025";
+const char* password = "scout@1234";
 
 // UDP setup
 WiFiUDP Udp;
